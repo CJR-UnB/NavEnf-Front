@@ -9,7 +9,7 @@ const NavBar = () => {
 	const menuItems = [
 		{ id: 1, label: 'Sobre nós', href: '/' },
 		{ id: 2, label: 'Autogestão', href: '/' },
-		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/' },
+		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/conhecendo-a-espinha-bifida' },
 		{ id: 4, label: 'Dê esse passo, cuidador', href: '/' },
 	]
 
@@ -18,7 +18,7 @@ const NavBar = () => {
 			<nav className="mx-auto flex min-h-[90px] max-w-[1440px] items-center justify-between px-6 md:min-h-[110px] md:px-10 lg:min-h-[135px] lg:px-12">
 				<Link href="/">
 					<Image
-						src="/assets/logo.svg"
+						src="/logo.png"
 						alt="Logo"
 						width={183}
 						height={133}

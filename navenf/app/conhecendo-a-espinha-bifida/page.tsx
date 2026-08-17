@@ -1,4 +1,4 @@
-import { References } from '../components';
+import { References } from '../../components';
 import { content } from './content';
 
 const ConhecendoPage = () => {
