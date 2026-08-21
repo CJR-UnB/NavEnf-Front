@@ -3,10 +3,17 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-import img1 from '../assets/header/home/Frame 12.png';
-import img2 from '../assets/header/home/image.png';
+const img1 = '/assets/header/home/01.png';
+const img2 = '/assets/header/home/02.png';
+const img3 = '/assets/header/home/03.png';
+const img4 = '/assets/header/home/04.png';
+const img5 = '/assets/header/home/05.png';
+const img6 = '/assets/header/home/06.png';
+const img7 = '/assets/header/home/07.png';
 
-const images = [img1, img2];
+const images = [img1, img2, img3, img4, img5, img6, img7];
+
+const imgMascara = '/assets/header/home/mascara.png';
 
 export default function HeaderHome() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,7 +73,7 @@ export default function HeaderHome() {
 
   return (
     <div 
-      className="relative w-full h-[300px] md:h-[1000px] group overflow-hidden"
+      className="relative w-full h-[300px] md:h-[800px] group overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -84,6 +91,22 @@ export default function HeaderHome() {
         {/* <div className="absolute inset-0 bg-black/30"></div> MASCARA ESCURA */}
 
       </div>
+
+      {/* 2. Máscara Translúcida Fixa (Fica por cima) */}
+        <div className="absolute inset-0 z-10 pointer-events-none">
+          <Image
+            src={imgMascara}
+            alt="Máscara de sobreposição"
+            fill
+            style={{ objectFit: 'cover' }} 
+            className="opacity-90" // Você pode ajustar a opacidade aqui caso precise
+            priority
+          />
+        </div>
+
+      { images.length > 1 && (
+
+        <>
 
       {/* Seta Esquerda */}
       <div 
@@ -117,6 +140,10 @@ export default function HeaderHome() {
           ></div>
         ))}
       </div>
+      </>
+
+      )}
+      
     </div>
   );
 }
