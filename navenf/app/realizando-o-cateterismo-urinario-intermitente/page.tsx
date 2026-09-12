@@ -1,74 +1,169 @@
 import { References } from '../components';
+import Image from 'next/image';
 import content from './content';
 
-const CateterismoPage = () => {
+export default function CateterismoPage() {
     return (
-        <div className="w-full bg-[#FFECBE] px-5 py-10 text-black sm:px-8 sm:py-12 md:px-12 md:py-16 lg:px-16 lg:py-20">
-            <div className="mx-auto flex w-full max-w-[1000px] flex-col gap-6 md:gap-8">
-                <h2 className="text-center font-['Castoro'] text-[30px] font-normal leading-[1.15] tracking-normal sm:text-[36px] md:text-[42px] lg:text-[48px]">
-                    {content.title}
-                </h2>
-            </div>
+        <main className="w-full">
 
-            <div className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8">
-                <p className="text-center font-['Atkinson_Hyperlegible'] text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                    {content.session[0].text}
-                    {content.session[0].textRef && (
-                        <sup className="text-[12px] sm:text-[14px]">{content.session[0].textRef}</sup>
-                    )}
-                </p>    
+            <section className="w-full bg-white">
+                <div className="w-[90%] max-w-[1100px] mx-auto mt-[4rem] mb-[4rem]">
 
-                <p className="text-center font-['Atkinson_Hyperlegible'] text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                    {content.session[0].text}
-                </p>
+                    <h1
+                        id="hcndia"
+                        className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center"
+                    >
+                        {content.title}
+                    </h1>
 
-                <p className="text-center font-['Atkinson_Hyperlegible'] text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                    {content.session[0].text2}
-                </p>
+                    <div className="mt-[3rem]">
+                        {content.session[0].text.map((text, index) => (
+                            <p
+                                key={index}
+                                className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] tracking-[0%] text-justify mb-[1.5rem]"
+                            >
+                                {text}
+                            </p>
+                        ))}
+                    </div>
 
-                <p className="text-center font-['Atkinson_Hyperlegible'] text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                    {content.session[0].text3}
-                </p>
-            </div>
+                </div>
+            </section>
 
-            <div className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8">
-                {/* <image /> */}
 
-                <h2 className="text-center font-['Castoro'] text-[30px] font-normal leading-[1.15] tracking-normal sm:text-[36px] md:text-[42px] lg:text-[48px]">
-                    {content.session[1].title}
-                </h2>
+            <section className="w-full bg-white">
 
-                <ol className="list-decimal space-y-5 pl-7 marker:font-bold sm:space-y-6 sm:pl-8 md:space-y-7 lg:space-y-8">                    {content.session[1].list.map((item) => (
-                        <li key={item.id} className="mb-4">
-                            <b>{item.title}</b> {item.text}
-                        </li>
-                    ))}
-                </ol>
-            </div>
+                <div className="w-full bg-[#80D960] mb-[3rem]">
+                    <div className="w-[90%] max-w-[1100px] mx-auto py-[1rem]">
+                        <h2
+                            className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center"
+                        >
+                            {content.session[1].title}
+                        </h2>
+                    </div>
+                </div>
 
-            <div className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8">
-                <h2 className="text-center font-['Castoro'] text-[30px] font-normal leading-[1.15] tracking-normal sm:text-[36px] md:text-[42px] lg:text-[48px]">
-                    {content.session[2].title}
-                </h2>
+                <div className="w-[90%] max-w-[1100px] mx-auto mb-[4rem]">
 
-                <ol className="list-decimal space-y-5 pl-7 marker:font-bold sm:space-y-6 sm:pl-8 md:space-y-7 lg:space-y-8">
-                    {content.session[2].list.map((item) => (
-                        <li key={item.id} className="mb-4">
-                            <b>{item.title}</b> {item.text}
-                        </li>
-                    ))}
-                </ol>
-            </div>
+                    <div className="w-full flex flex-col gap-[4rem]">
 
-            <div className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8">
-                <p className="text-center font-['Atkinson_Hyperlegible'] text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                    {content.session[3].text}
-                </p>
-            </div>
+                        {content.session[1].list.map((item) => (
+                            <div
+                                key={item.id}
+                                className="w-full"
+                            >
 
-            <References references={content.references} />
-        </div>
+                                <div className="w-full">
+                                    <p
+                                        className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] tracking-[0%] text-justify"
+                                    >
+                                        <strong
+                                            className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-bold leading-[1.35] tracking-[0%]"
+                                        >
+                                            {item.id}. {item.title}
+                                        </strong>{' '}
+                                        {item.text}
+                                    </p>
+                                </div>
+
+                                <div className="w-full flex justify-center items-center mt-[2rem]">
+                                    <Image
+                                        src={`/assets/${item.img}.svg`}
+                                        alt={item.title}
+                                        width={1000}
+                                        height={1000}
+                                        className="w-[clamp(280px,45vw,550px)] h-auto"
+                                    />
+                                </div>
+
+                            </div>
+                        ))}
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section className="w-full bg-white">
+
+                <div className="w-full bg-[#529FED] mb-[3rem]">
+                    <div className="w-[90%] max-w-[1100px] mx-auto py-[1rem]">
+                        <h2
+                            className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center"
+                        >
+                            {content.session[2].title}
+                        </h2>
+                    </div>
+                </div>
+
+                <div className="w-[90%] max-w-[1100px] mx-auto mb-[4rem]">
+
+                    <div className="w-full flex flex-col gap-[4rem]">
+
+                        {content.session[2].list.map((item) => (
+                            <div
+                                key={item.id}
+                                className="w-full"
+                            >
+
+                                <div className="w-full">
+                                    <p
+                                        className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] tracking-[0%] text-justify"
+                                    >
+                                        <strong
+                                            className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-bold leading-[1.35] tracking-[0%]"
+                                        >
+                                            {item.id}. {item.title}
+                                        </strong>{' '}
+                                        {item.text}
+                                    </p>
+                                </div>
+
+                                <div className="w-full flex justify-center items-center mt-[2rem]">
+                                    <Image
+                                        src={`/assets/${item.img}.svg`}
+                                        alt={item.title}
+                                        width={1000}
+                                        height={1000}
+                                        className="w-[clamp(280px,45vw,550px)] h-auto"
+                                    />
+                                </div>
+
+                            </div>
+                        ))}
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section className="w-full bg-white">
+                <div className="w-[90%] max-w-[1100px] mx-auto mb-[4rem]">
+
+                    <div className="w-full rounded-[1rem]">
+
+                        <p
+                            className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] tracking-[0%] text-justify"
+                        >
+                            {content.session[3].text}
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section className="w-full bg-white">
+                <div className="w-[90%] max-w-[1100px] mx-auto mb-[4rem]">
+
+                    <References references={content.references} />
+
+                </div>
+            </section>
+
+        </main>
     );
-};
-
-export default CateterismoPage;
+}
