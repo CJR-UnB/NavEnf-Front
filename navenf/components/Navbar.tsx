@@ -9,7 +9,7 @@ const NavBar = () => {
 	const menuItems = [
 		{ id: 1, label: 'Sobre nós', href: '/' },
 		{ id: 2, label: 'Autogestão', href: '/' },
-		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/conhecendo-a-espinha-bifida' },
+		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/' },
 		{ id: 4, label: 'Dê esse passo, cuidador', href: '/' },
 	]
 
