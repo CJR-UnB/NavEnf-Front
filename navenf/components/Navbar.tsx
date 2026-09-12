@@ -7,10 +7,10 @@ import { useState } from 'react';
 const NavBar = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState(false);
 	const menuItems = [
-		{ id: 1, label: 'Sobre nós', href: '/' },
-		{ id: 2, label: 'Autogestão', href: '/' },
-		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/' },
-		{ id: 4, label: 'Dê esse passo, cuidador', href: '/' },
+		{ id: 1, label: 'Sobre nós', href: '/#sobre-nos' },
+		{ id: 2, label: 'Autogestão', href: '/#autogestao' },
+		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/#espinha-bifida' },
+		{ id: 4, label: 'Dê esse passo, cuidador', href: '/#cuidador' },
 	]
 
 	return (
