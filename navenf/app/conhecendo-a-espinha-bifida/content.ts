@@ -83,4 +83,4 @@ export const content = {
             text: 'IMAGEM: "Diagrama de Meningomielocela" por Uvainio / Wikimedia Commons, licenciado sob CC BY-SA 3.0.*Fonte: gerada por Chat GPT em 31 de agosto de 2026.'
         }
     ]
-}
+} as const;

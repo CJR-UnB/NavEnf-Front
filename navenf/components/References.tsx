@@ -4,7 +4,7 @@ interface Reference {
 }
 
 interface ReferencesProps {
-    references: Reference[];
+    references: readonly Reference[];
 }
 
 const References = ({ references }: ReferencesProps) => {
