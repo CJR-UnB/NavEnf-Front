@@ -1,40 +1,38 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Atkinson_Hyperlegible } from 'next/font/google';
 import './globals.css';
-import NavBar from './components/Navbar';
+import NavBar from '../components/Navbar';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
+// Configurando a Atkinson Hyperlegible
+const atkinson = Atkinson_Hyperlegible({
+    weight: ['400', '700'],
+    subsets: ['latin'],
+    variable: '--font-atkinson',
 });
 
 export const metadata: Metadata = {
-	title: 'NavEnf',
-	description: 'Navegação e informações sobre enfermagem',
+    title: 'NavEnf',
+    description: 'Navegação e informações sobre enfermagem',
 };
 
 export default function RootLayout({
-	children,
+    children,
 }: Readonly<{
-	children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-	return (
-		<html
-			lang="pt-BR"
-			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-		>
-			<body className="min-h-full flex flex-col">
-				<NavBar />
+    return (
+        <html
+            lang="pt-BR"
+            className={`${atkinson.variable} h-full antialiased`}
+        >
+            {/* O font-atkinson aqui aplica ela para todo o texto corrido do site */}
+            <body className="min-h-full flex flex-col font-atkinson">
+                <NavBar />
 
-				<main className="flex-1">
-					{children}
-				</main>
-			</body>
-		</html>
-	);
+                <main className="flex-1">
+                    {children}
+                </main>
+            </body>
+        </html>
+    );
 }
