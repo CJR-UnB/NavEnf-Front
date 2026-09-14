@@ -127,6 +127,6 @@ const content = {
             text: '*Fonte: gerada por Figma AI Agent em 4 e 6 de setembro de 2026.'
         }
     ]
-}
+} as const;
 
 export default content;
