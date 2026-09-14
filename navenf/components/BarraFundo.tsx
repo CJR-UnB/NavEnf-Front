@@ -6,16 +6,18 @@ import { useState, ReactNode } from 'react';
 interface BarraFundoProps {
   titulo: string;
   children: ReactNode;
+  id?: string;
 }
 
-export default function BarraFundo({ titulo, children }: BarraFundoProps) {
+export default function BarraFundo({ titulo, children, id }: BarraFundoProps) {
   // Estado que controla se a aba está aberta (true) ou fechada (false)
   const [isOpen, setIsOpen] = useState(false);
 
 return (
     // Trocamos o bg-[#FDF1D6] pelo novo padrão bg-[#FFECBE]
-    <div 
-      className={`w-full transition-colors duration-500 ${
+    <div
+      id={id}
+      className={`w-full scroll-mt-[100px] transition-colors duration-500 md:scroll-mt-[120px] lg:scroll-mt-[145px] ${
         isOpen ? 'bg-[#FFFFFF]' : 'bg-[#F2A900]'
       }`}
     >

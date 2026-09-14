@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divisao from "@/components/Divisao";
+import Divider from "@/components/Divider";
 import References from "@/components/References";
 
 export default function RotinaEAutonomia() {
@@ -29,13 +29,15 @@ export default function RotinaEAutonomia() {
                 </div>
             </section>
 
+            <div className="w-full bg-white h-8 md:h-12" />
+
             {/* 2. INTRODUÇÃO (Fundo Azul Escuro) */}
             <section className="w-full bg-[#003366] text-white py-12 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto text-center">
-                    <h2 className="font-calsans text-2xl sm:text-3xl mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] mb-6">
                         Como realizar o cateterismo urinário<br className="hidden sm:block" /> intermitente fora de casa?
                     </h2>
-                    <p className="md:text-lg leading-relaxed max-w-[800px] mx-auto">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify max-w-[800px] mx-auto">
                         Realizar o cateterismo urinário intermitente fora de casa pode gerar medo e insegurança no início, mas com planejamento e prática é possível manter a rotina com mais tranquilidade, segurança e autonomia.<sup>1,7,11</sup>
                     </p>
                 </div>
@@ -44,12 +46,12 @@ export default function RotinaEAutonomia() {
             {/* 3. ANTES DE SAIR DE CASA (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">Antes de sair de casa</h2>
-                    <p className="font-bold text-center md:text-lg mb-8">Organize um kit com todos os materiais necessários:</p>
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">Antes de sair de casa</h2>
+                    <p className="font-bold text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] leading-[1.35] mb-8">Organize um kit com todos os materiais necessários:</p>
                     
                     <div className="flex flex-col md:flex-row items-center justify-center gap-10">
                         <div className="w-full md:w-1/2">
-                            <ul className="list-disc pl-5 space-y-2 md:text-lg">
+                            <ul className="list-disc pl-5 space-y-2 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                                 <li>Cateteres ou sondas. Tipos de sonda: nelaton (plástico ou PVC) e hidrofílica, que já vem com lubrificante.</li>
                                 <li>Lubrificante (quando necessário)</li>
                                 <li>Lenços ou materiais de higiene</li>
@@ -64,7 +66,7 @@ export default function RotinaEAutonomia() {
                         </div>
                     </div>
 
-                    <p className="md:text-lg mt-8 text-justify md:text-left">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mt-8 text-justify">
                         Confira a quantidade de materiais conforme o tempo que ficará fora e planeje os horários do cateterismo urinário intermitente para evitar atrasos ou longos intervalos
                     </p>
                 </div>
@@ -73,15 +75,15 @@ export default function RotinaEAutonomia() {
             {/* 4. ESCOLHENDO LOCAL ADEQUADO (Fundo Azul Claro) */}
             <section className="w-full bg-[#59ACFF] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">Escolhendo um local adequado</h2>
-                    <p className="md:text-lg mb-8 text-justify md:text-left">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-8">Escolhendo um local adequado</h2>
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-8 text-justify">
                         O ideal é utilizar um banheiro limpo, mas na ausência, escolha um local com privacidade e espaço suficiente para realizar o procedimento com segurança.<sup>7,9</sup>
                     </p>
                     
                     <div className="flex flex-col md:flex-row items-center gap-10">
                         <div className="w-full md:w-1/2">
-                            <p className="font-bold md:text-lg mb-4">Dê preferência para locais que tenham:</p>
-                            <ul className="list-disc pl-5 space-y-2 md:text-lg">
+                            <p className="font-bold text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-4">Dê preferência para locais que tenham:</p>
+                            <ul className="list-disc pl-5 space-y-2 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                                 <li>Banheiro acessível</li>
                                 <li>Pia próxima para higiene das mãos</li>
                                 <li>Privacidade</li>
@@ -100,9 +102,9 @@ export default function RotinaEAutonomia() {
             {/* 5. NA ESCOLA OU TRABALHO (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">Na escola ou trabalho</h2>
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-8">Na escola ou trabalho</h2>
                     
-                    <ul className="list-disc pl-5 space-y-3 md:text-lg mb-10 max-w-[800px] mx-auto">
+                    <ul className="list-disc pl-5 space-y-3 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-10 max-w-[800px] mx-auto">
                         <li>Converse com a escola ou ambiente de trabalho sobre a necessidade de um espaço adequado e privado;</li>
                         <li>Sempre que possível, mantenha materiais extras disponíveis no local;</li>
                         <li>Caso exista insegurança, um profissional de saúde pode auxiliar na orientação da instituição.</li>
@@ -118,11 +120,11 @@ export default function RotinaEAutonomia() {
             {/* 6. DURANTE VIAGENS E PASSEIOS (Fundo Amarelo) */}
             <section className="w-full bg-[#FFC94B] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-10">Durante viagens e passeios</h2>
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-10">Durante viagens e passeios</h2>
                     
                     <div className="flex flex-col md:flex-row items-center gap-10 mb-10">
                         <div className="w-full md:w-3/5">
-                            <ul className="list-disc pl-5 space-y-3 md:text-lg">
+                            <ul className="list-disc pl-5 space-y-3 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                                 <li>Leve <strong>materiais extras</strong> para imprevistos;</li>
                                 <li>Procure previamente <strong>locais acessíveis;</strong></li>
                                 <li>Organize os <strong>horários das paradas</strong> durante viagens longas;</li>
@@ -135,7 +137,7 @@ export default function RotinaEAutonomia() {
                         </div>
                     </div>
 
-                    <p className="md:text-lg text-justify md:text-left leading-relaxed">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify leading-relaxed">
                         É comum sentir medo, vergonha ou preocupação ao realizar o cateterismo urinário intermitente fora de casa, principalmente no início.<sup>7,9</sup> Com o tempo, prática e apoio, muitas pessoas passam a realizar o procedimento com mais confiança e autonomia. Buscar apoio da família, profissionais de saúde e grupos de suporte pode ajudar no enfrentamento dessas dificuldades.<sup>1,7</sup>
                     </p>
                 </div>
@@ -144,45 +146,47 @@ export default function RotinaEAutonomia() {
             {/* 7. PARTICIPAR TAMBÉM É CUIDADO + CARDS (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[1000px] mx-auto">
-                    <Divisao className="mb-10" />
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">Participar também é cuidado.</h2>
-                    <p className="md:text-lg text-center leading-relaxed mb-16 max-w-[850px] mx-auto">
+                    <Divider className="mb-10" />
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">Participar também é cuidado.</h2>
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify leading-relaxed mb-16 max-w-[850px] mx-auto">
                         Viver com mielo e realizar o cateterismo urinário intermitente não deve impedir crianças, adolescentes e famílias de participarem da vida social, escolar e das atividades do cotidiano. Participar de momentos de lazer, convivência e aprendizado também faz parte do cuidado e contribui para a saúde física, emocional e social.<sup>5,7</sup>
                     </p>
 
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-10">O que pode ajudar?</h2>
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-10">O que pode ajudar?</h2>
 
                     {/* Grid de Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[800px] mx-auto">
                         
                         {/* Card 1 */}
-                        <div className="bg-[#80D960] rounded-2xl p-8 flex flex-col items-center text-center">
+                        <div className="bg-[#80D960] rounded-2xl p-8 flex flex-col items-center text-center relative">
+                            <span className="absolute top-8 right-10 text-xl">*</span>
                             <Image src="/manual5.png" alt="Criança super-herói" width={120} height={120} className="mb-4" />
-                            <h3 className="font-bold underline md:text-lg mb-2">Incentivar a autonomia</h3>
-                            <p>Permitir que a criança ou adolescente participe gradualmente do próprio cuidado ajuda no desenvolvimento da independência e da segurança.</p>
+                            <h3 className="font-bold underline font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] leading-[1.35] mb-2">Incentivar a autonomia</h3>
+                            <p className="text-justify">Permitir que a criança ou adolescente participe gradualmente do próprio cuidado ajuda no desenvolvimento da independência e da segurança.</p>
                         </div>
 
                         {/* Card 2 */}
                         <div className="bg-[#59ACFF] rounded-2xl p-8 flex flex-col items-center text-center relative">
                             <Image src="/manual2.png" alt="Banheiro adaptado" width={120} height={120} className="mb-4" />
                             <span className="absolute top-8 right-10 text-xl">*</span>
-                            <h3 className="font-bold underline md:text-lg mb-2">Adaptar os ambientes</h3>
-                            <p>Banheiros acessíveis, locais privados e espaços acolhedores facilitam a realização do cateterismo urinário intermitente fora de casa.</p>
+                            <h3 className="font-bold underline font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] leading-[1.35] mb-2">Adaptar os ambientes</h3>
+                            <p className="text-justify">Banheiros acessíveis, locais privados e espaços acolhedores facilitam a realização do cateterismo urinário intermitente fora de casa.</p>
                         </div>
 
                         {/* Card 3 */}
                         <div className="bg-[#FFC94B] rounded-2xl p-8 flex flex-col items-center text-center relative">
                             <Image src="/manual7.png" alt="Conversa" width={120} height={120} className="mb-4" />
                             <span className="absolute top-8 right-10 text-xl">*</span>
-                            <h3 className="font-bold underline md:text-lg mb-2">Conversar sobre o tema</h3>
-                            <p>O diálogo aberto com familiares, escola e profissionais reduz medos e ajuda a combater preconceitos.</p>
+                            <h3 className="font-bold underline font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] leading-[1.35] mb-2">Conversar sobre o tema</h3>
+                            <p className="text-justify">O diálogo aberto com familiares, escola e profissionais reduz medos e ajuda a combater preconceitos.</p>
                         </div>
 
                         {/* Card 4 */}
-                        <div className="bg-[#80D960] rounded-2xl p-8 flex flex-col items-center text-center">
+                        <div className="bg-[#80D960] rounded-2xl p-8 flex flex-col items-center text-center relative">
+                            <span className="absolute top-8 right-10 text-xl">*</span>
                             <Image src="/manual8.png" alt="Rotina e planejamento" width={120} height={120} className="mb-4" />
-                            <h3 className="font-bold underline md:text-lg mb-2">Planejar a rotina</h3>
-                            <p>Organizar horários, materiais e locais adequados permite maior tranquilidade durante passeios, viagens e atividades sociais.</p>
+                            <h3 className="font-bold underline font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] leading-[1.35] mb-2">Planejar a rotina</h3>
+                            <p className="text-justify">Organizar horários, materiais e locais adequados permite maior tranquilidade durante passeios, viagens e atividades sociais.</p>
                         </div>
 
                     </div>
@@ -192,28 +196,29 @@ export default function RotinaEAutonomia() {
             {/* 8. SENTIMENTOS (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 pb-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <Divisao className="mb-10" />
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">Cuidado também é sobre manejar nossos<br className="hidden sm:block"/> sentimentos</h2>
-                    <p className="md:text-lg leading-relaxed mb-10 text-justify md:text-left">
+                    <Divider className="mb-10" />
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">Cuidado também é sobre manejar nossos<br className="hidden sm:block"/> sentimentos</h2>
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-10 text-justify">
                         Sabemos que cuidar de uma criança com mielo que realiza o cateterismo urinário intermitente diariamente vai muito além do procedimento técnico. O impacto emocional sobre os cuidadores, quase sempre as mães, é profundo e começa desde o momento do diagnóstico. Reconhecer esses sentimentos é o primeiro passo para superá-los.<sup>2,8</sup>
                     </p>
 
-                    <h3 className="font-bold md:text-lg mb-8">O que posso sentir durante meu processo de cuidado?</h3>
+                    <h3 className="font-bold font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-8">O que posso sentir durante meu processo de cuidado?</h3>
 
                     <div className="flex flex-col md:flex-row items-center gap-10 mb-12">
-                        <div className="w-full md:w-3/5 space-y-4 md:text-lg">
+                        <div className="w-full md:w-3/5 space-y-4 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p><strong>Medo e culpa:</strong> Presentes desde o diagnóstico; medo de errar o procedimento e causar dano ao filho.</p>
                             <p><strong>Ansiedade:</strong> Intensificada pelo medo de complicações, especialmente durante a aplicação da técnica.</p>
                             <p><strong>Solidão:</strong> Mesmo casadas, a maioria sente que ninguém, incluindo o cônjuge, a apoia no processo.</p>
                             <p><strong>Sobrecarga:</strong> Alta demanda de cuidados que compromete a vida pessoal, conjugal e profissional</p>
                         </div>
-                        <div className="w-full md:w-2/5 flex justify-center">
+                        <div className="w-full md:w-2/5 flex justify-center relative">
                             <Image src="/manual9.png" alt="Mãe segurando bebê" width={300} height={300} className="w-full max-w-[280px] h-auto object-contain" />
+                            <span className="absolute top-0 right-[15%] text-xl">*</span>
                         </div>
                     </div>
 
-                    <h3 className="font-bold md:text-lg mb-6">O que agrava o sofrimento emocional:</h3>
-                    <ul className="space-y-4 md:text-lg">
+                    <h3 className="font-bold font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-6">O que agrava o sofrimento emocional:</h3>
+                    <ul className="space-y-4 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                         <li><strong>Cuidadoras com doenças crônicas próprias</strong> apresentam ansiedade significativamente mais alta por terem mais uma doença crônica além da sua para manejar.</li>
                         <li><strong>Baixa renda familiar combinada com Infecção do Trato Urinário frequentes</strong> (3 a 4 nos últimos 3 meses) aumentam a preocupação aos cuidadores</li>
                         <li><strong>Falta de treinamento adequado</strong> intensifica o medo de errar e causar complicações</li>
@@ -225,44 +230,47 @@ export default function RotinaEAutonomia() {
             {/* 9. COMO SUPERAR (Fundo Branco + Imagem topo + Blocos coloridos) */}
             <section className="w-full bg-white text-gray-900 py-16 overflow-hidden">
                 <div className="max-w-[900px] mx-auto px-6 md:px-12 flex flex-col items-center mb-10">
-                    <Image src="/manual10.png" alt="Cuidadores estressados" width={400} height={250} className="w-full max-w-[350px] h-auto object-contain mb-8" />
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center">Como superar (estratégias baseadas em evidências)</h2>
+                    <div className="relative">
+                        <Image src="/manual10.png" alt="Cuidadores estressados" width={400} height={250} className="w-full max-w-[350px] h-auto object-contain mb-8" />
+                        <span className="absolute top-0 right-[10%] text-xl">*</span>
+                    </div>
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center">Como superar (estratégias baseadas em evidências)</h2>
                 </div>
 
                 {/* Blocos em formato de "escada" */}
-                <div className="w-full flex flex-col space-y-6 md:text-lg">
+                <div className="w-full flex flex-col space-y-6 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                     
                     {/* 1. Verde */}
                     <div className="bg-[#80D960] w-[95%] md:w-[80%] self-start py-6 px-6 md:px-16 flex items-center">
-                        <div className="max-w-[700px] w-full mx-auto text-left">
+                        <div className="max-w-[700px] w-full mx-auto text-justify">
                             <p>Oferecer treinamento de qualidade com equipe acolhedora, realizar a primeira cateterização junto com o profissional aumenta a confiança e reduz o medo inicial.</p>
                         </div>
                     </div>
 
                     {/* 2. Amarelo */}
                     <div className="bg-[#FFC94B] w-[95%] md:w-[85%] self-end py-6 px-6 md:px-16 flex items-center">
-                        <div className="max-w-[700px] w-full mx-auto text-left">
+                        <div className="max-w-[700px] w-full mx-auto text-justify">
                             <p>Promover contato com outros cuidadores, estar no mesmo ambiente que famílias que vivem a mesma situação é fonte de motivação, troca de informações e apoio mútuo.</p>
                         </div>
                     </div>
 
                     {/* 3. Azul */}
                     <div className="bg-[#59ACFF] w-[95%] md:w-[80%] self-start py-6 px-6 md:px-16 flex items-center">
-                        <div className="max-w-[700px] w-full mx-auto text-left">
+                        <div className="max-w-[700px] w-full mx-auto text-justify">
                             <p>Ensinar outros familiares a realizarem a técnica, reduz a sobrecarga exclusiva da mãe e garante suporte em situações de doença ou ausência.</p>
                         </div>
                     </div>
 
                     {/* 4. Verde */}
                     <div className="bg-[#80D960] w-[95%] md:w-[85%] self-end py-6 px-6 md:px-16 flex items-center">
-                        <div className="max-w-[700px] w-full mx-auto text-left">
+                        <div className="max-w-[700px] w-full mx-auto text-justify">
                             <p>Incentivar grupos de apoio presenciais e virtuais, associações de pessoas com mielo facilitam interações, ajuda mútua e enfrentamento de questões emocionais e práticas.</p>
                         </div>
                     </div>
 
                     {/* 5. Amarelo */}
                     <div className="bg-[#FFC94B] w-[95%] md:w-[80%] self-start py-6 px-6 md:px-16 flex items-center">
-                        <div className="max-w-[700px] w-full mx-auto text-left">
+                        <div className="max-w-[700px] w-full mx-auto text-justify">
                             <p>Disponibilizar programas de aconselhamento psicoemocional, especialmente para cuidadores com maior carga emocional identificada durante o acompanhamento.</p>
                         </div>
                     </div>
@@ -273,7 +281,7 @@ export default function RotinaEAutonomia() {
             {/* 10. REFERÊNCIAS */}
             <section className="w-full bg-white text-black py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <Divisao className="mb-12" />
+                    <Divider className="mb-12" />
                     
                     <References references={listaReferencias} />
 

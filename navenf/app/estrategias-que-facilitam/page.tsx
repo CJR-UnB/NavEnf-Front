@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divisao from "@/components/Divisao";
+import Divider from "@/components/Divider";
 import References from "@/components/References";
 
 export default function EstrategiasFacilitam() {
@@ -29,16 +29,18 @@ export default function EstrategiasFacilitam() {
                 </div>
             </section>
 
+            <div className="w-full bg-white h-8 md:h-12" />
+
             {/* 2. DOR E MEDO (Fundo Amarelo) */}
             <section className="w-full bg-[#FFC94B] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto text-center">
-                    <h2 className="font-calsans text-2xl sm:text-3xl mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] mb-6">
                         Dor e medo: Como uma técnica adequada<br className="hidden sm:block"/> pode mudar isso?
                     </h2>
-                    <p className="md:text-lg leading-relaxed mb-6">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-6">
                         Um conjunto de sentimentos como dor, medo, ansiedade, vergonha e insegurança podem ser comuns e vivenciados por cuidadores e crianças com mielo usuárias de cateterismo urinário intermitente.<sup>1,2,4</sup>
                     </p>
-                    <p className="md:text-lg leading-relaxed">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                         Todos esses sentimentos estão relacionados ao medo de machucar a criança, inserir o cateter de forma incorreta ou causar infecções.<sup>2,4</sup> Especialmente quando se recebe pouco treinamento ou apoio profissional.<sup>1,3</sup>
                     </p>
                 </div>
@@ -47,11 +49,11 @@ export default function EstrategiasFacilitam() {
             {/* 3. PASSO A PASSO (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-8">
                         Passo a passo para uma técnica adequada
                     </h2>
                     
-                    <ol className="list-decimal pl-5 md:pl-8 space-y-3 md:text-lg leading-relaxed mb-10 max-w-[800px] mx-auto">
+                    <ol className="list-decimal pl-5 md:pl-8 space-y-3 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-10 max-w-[800px] mx-auto">
                         <li><strong>Higienização</strong> das mãos antes de realizar o cateterismo urinário intermitente: Lave bem as mãos com água e sabonete neutro (incluindo entre os dedos e polegares).</li>
                         <li><strong>Escolha o material adequado:</strong> Separe o cateter/sonda do tamanho adequado, um lubrificante à base de água (caso a sonda não seja hidrofílica).</li>
                         <li><strong>Realize a limpeza íntima:</strong> Antes do cateterismo, limpe a região genital para evitar a entrada de bactérias.</li>
@@ -76,14 +78,14 @@ export default function EstrategiasFacilitam() {
             {/* 4. CATETERISMO NA INFÂNCIA (Fundo Amarelo) */}
             <section className="w-full bg-[#FFC94B] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">
-                        Cateterismo na infância: Como o treinamento<br className="hidden sm:block"/> precoce favorece a adesão e a independência
+                    <h2 className="font-cal text-[clamp(0.65rem,4vw,2.5rem)] font-normal leading-[1.1] text-center mb-8">
+                        Cateterismo na infância: Como o treinamento<br /> precoce favorece a adesão e a independência
                     </h2>
                     
-                    <p className="underline md:text-lg mb-4 text-center md:text-left max-w-[850px] mx-auto">
+                    <p className="underline font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-4 text-center md:text-justify max-w-[850px] mx-auto">
                         Por que iniciar cedo faz diferença?
                     </p>
-                    <p className="md:text-lg leading-relaxed text-justify md:text-left max-w-[850px] mx-auto">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-justify max-w-[850px] mx-auto">
                         Bebês são mais tolerantes e tecnicamente mais fáceis de cateterizar do que crianças pequenas, que apresentam comportamentos mais desafiadores conforme crescem e desenvolvem autoconsciência.<sup>1,4</sup> Iniciar a prática na primeira infância facilita o aprendizado, a adaptação e a adesão ao longo da vida.<sup>1</sup>
                     </p>
                 </div>
@@ -92,36 +94,36 @@ export default function EstrategiasFacilitam() {
             {/* 5. BENEFÍCIOS DO INÍCIO PRECOCE (Fundo Branco com blocos coloridos) */}
             <section className="w-full bg-white text-gray-900 py-16 overflow-hidden">
                 <div className="max-w-[900px] mx-auto px-6 md:px-12 mb-8">
-                    <h3 className="font-calsans text-xl sm:text-2xl mb-6">
+                    <h3 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] mb-6">
                         Benefícios do início precoce:
                     </h3>
                 </div>
 
-                <div className="w-full flex flex-col space-y-6 md:text-lg">
+                <div className="w-full flex flex-col space-y-6 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                     {/* Bloco Azul */}
                     <div className="bg-[#59ACFF] w-[95%] md:w-[85%] lg:w-[80%] mr-auto py-6 px-6 md:px-16 flex items-center justify-end">
-                        <div className="max-w-[800px] w-full text-left">
+                        <div className="max-w-[800px] w-full text-justify">
                             <p><strong>Melhor adesão a longo prazo:</strong> Quanto maior a frequência diária praticada, menor a probabilidade de abandono do procedimento.<sup>1</sup></p>
                         </div>
                     </div>
 
                     {/* Bloco Amarelo */}
                     <div className="bg-[#FFC94B] w-[95%] md:w-[85%] lg:w-[80%] ml-auto py-6 px-6 md:px-16 flex items-center justify-start">
-                        <div className="max-w-[800px] w-full text-left">
+                        <div className="max-w-[800px] w-full text-justify">
                             <p><strong>Aprendizado facilitado:</strong> Iniciar na primeira infância foi identificado pelos cuidadores como uma facilidade de aprendizado e adaptação da técnica.<sup>1,4</sup></p>
                         </div>
                     </div>
 
                     {/* Bloco Azul */}
                     <div className="bg-[#59ACFF] w-[95%] md:w-[85%] lg:w-[80%] mr-auto py-6 px-6 md:px-16 flex items-center justify-end">
-                        <div className="max-w-[800px] w-full text-left">
+                        <div className="max-w-[800px] w-full text-justify">
                             <p><strong>Menor risco de complicações:</strong> A continuidade do cateterismo reduz o risco de ITU, principal complicação, e previne mortalidade por complicações renais.<sup>8</sup></p>
                         </div>
                     </div>
 
                     {/* Bloco Verde */}
                     <div className="bg-[#80D960] w-[95%] md:w-[85%] lg:w-[80%] ml-auto py-6 px-6 md:px-16 flex items-center justify-start">
-                        <div className="max-w-[800px] w-full text-left">
+                        <div className="max-w-[800px] w-full text-justify">
                             <p><strong>Menor ansiedade nos cuidadores:</strong> Cuidadores que recebem treinamento adequado apresentam níveis de ansiedade significativamente mais baixos.<sup>3</sup></p>
                         </div>
                     </div>
@@ -129,18 +131,18 @@ export default function EstrategiasFacilitam() {
 
                 {/* Divisão central */}
                 <div className="mt-16">
-                    <Divisao />
+                    <Divider />
                 </div>
 
                 {/* Transição para a autonomia */}
-                <div className="max-w-[900px] mx-auto px-6 md:px-12 mt-16 text-center md:text-left">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">
+                <div className="max-w-[900px] mx-auto px-6 md:px-12 mt-16 text-center md:text-justify">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">
                         Transição para a autonomia no Cateterismo
                     </h2>
-                    <p className="font-bold md:text-lg mb-6">
+                    <p className="font-bold font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-6">
                         Como pais e jovens podem compartilhar progressivamente entre si a responsabilidade do cateterismo?
                     </p>
-                    <p className="md:text-lg leading-relaxed text-justify md:text-left">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-justify">
                         A independência na técnica não acontece de uma hora para outra, ela é construída aos poucos, juntos. Pais e filhos aprendem a dividir responsabilidades, errar, ajustar e crescer nesse processo. Entender como isso funciona ajuda toda a família a caminhar com mais segurança.<sup>5</sup>
                     </p>
                 </div>
@@ -149,7 +151,7 @@ export default function EstrategiasFacilitam() {
             {/* 6. O QUE DESENCADEIA A TRANSIÇÃO (Fundo Amarelo + Cards) */}
             <section className="w-full bg-[#FFC94B] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[1000px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-10">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-10">
                         O que desencadeia a transição
                     </h2>
                     
@@ -160,27 +162,28 @@ export default function EstrategiasFacilitam() {
                         <div className="bg-[#80D960] rounded-xl p-6 flex flex-col items-center text-center relative">
                             <Image src="/estrategias2.png" alt="Viagens e passeios" width={120} height={120} className="mb-4" />
                             <span className="absolute top-6 right-6 text-xl">*</span>
-                            <p className="md:text-lg">Viagens e passeios escolares sem os pais</p>
+                            <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center">Viagens e passeios escolares sem os pais</p>
                         </div>
 
                         {/* Card Azul (Imagem 3) */}
-                        <div className="bg-[#59ACFF] rounded-xl p-6 flex flex-col items-center text-center">
+                        <div className="bg-[#59ACFF] rounded-xl p-6 flex flex-col items-center text-center relative">
                             <Image src="/estrategias3.png" alt="Escola" width={120} height={120} className="mb-4" />
-                            <p className="md:text-lg">Entrada em nova escola ou período integral</p>
+                            <span className="absolute top-6 right-6 text-xl">*</span>
+                            <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center">Entrada em nova escola ou período integral</p>
                         </div>
 
                         {/* Card Verde (Imagem 4) */}
                         <div className="bg-[#80D960] rounded-xl p-6 flex flex-col items-center text-center relative">
                             <Image src="/estrategias4.png" alt="Dormitório" width={120} height={120} className="mb-4" />
                             <span className="absolute top-6 right-6 text-xl">*</span>
-                            <p className="md:text-lg">Morar em dormitório ou longe da família</p>
+                            <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center">Morar em dormitório ou longe da família</p>
                         </div>
 
                         {/* Card Azul (Imagem 5) */}
                         <div className="bg-[#59ACFF] rounded-xl p-6 flex flex-col items-center text-center relative">
                             <Image src="/estrategias5.png" alt="Membro ativo" width={120} height={120} className="mb-4" />
                             <span className="absolute top-6 right-6 text-xl">*</span>
-                            <p className="md:text-lg">Tornar-se membro ativo da sociedade</p>
+                            <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center">Tornar-se membro ativo da sociedade</p>
                         </div>
                     </div>
                 </div>
@@ -189,7 +192,7 @@ export default function EstrategiasFacilitam() {
             {/* 7. COMO O PROCESSO ACONTECE (Fundo Branco com Pills CSS customizadas) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12 overflow-hidden">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-12">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-12">
                         Como o processo acontece (passo a passo)
                     </h2>
 
@@ -201,7 +204,7 @@ export default function EstrategiasFacilitam() {
                                     Compartilhar a consciência da independência
                                 </div>
                             </div>
-                            <div className="w-full md:w-1/2 md:text-lg text-center md:text-left">
+                            <div className="w-full md:w-1/2 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center md:text-justify">
                                 Pais e jovens reconhecem juntos que a autonomia é necessária e passam a definir metas específicas para a autogestão do jovem.
                             </div>
                         </div>
@@ -213,7 +216,7 @@ export default function EstrategiasFacilitam() {
                                     Identificar o que o jovem já consegue fazer
                                 </div>
                             </div>
-                            <div className="w-full md:w-1/2 md:text-lg text-center md:text-right">
+                            <div className="w-full md:w-1/2 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center md:text-right">
                                 Juntos, identificam quais partes do cateterismo urinário intermitente o jovem pode realizar sozinho e quais ainda precisam de apoio, sem pressa, sem pressão.
                             </div>
                         </div>
@@ -225,7 +228,7 @@ export default function EstrategiasFacilitam() {
                                     Criar situações de autossuficiência
                                 </div>
                             </div>
-                            <div className="w-full md:w-1/2 md:text-lg text-center md:text-left">
+                            <div className="w-full md:w-1/2 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center md:text-justify">
                                 Os pais reduzem conscientemente a ajuda e criam situações em que o jovem realiza o cateterismo urinário intermitente sozinho, mesmo que de forma imperfeita.
                             </div>
                         </div>
@@ -237,7 +240,7 @@ export default function EstrategiasFacilitam() {
                                     Aprender por experimentação conjunta
                                 </div>
                             </div>
-                            <div className="w-full md:w-1/2 md:text-lg text-center md:text-right">
+                            <div className="w-full md:w-1/2 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center md:text-right">
                                 Pais e jovens adaptam ferramentas e métodos juntos, resolvendo problemas um por um e acumulando experiências ao longo do tempo.
                             </div>
                         </div>
@@ -249,7 +252,7 @@ export default function EstrategiasFacilitam() {
                                     Conciliar visões diferentes de independência
                                 </div>
                             </div>
-                            <div className="w-full md:w-1/2 md:text-lg text-center md:text-left">
+                            <div className="w-full md:w-1/2 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center md:text-justify">
                                 Pais e jovens frequentemente têm ideias diferentes sobre o que significa "ser independente" e aprendem a alinhar essas visões passo a passo.
                             </div>
                         </div>
@@ -263,25 +266,28 @@ export default function EstrategiasFacilitam() {
                     
                     {/* Caixa Azul Escura (Com md:pb-32 para criar espaço vazio embaixo pro amarelo não tampar o texto) */}
                     <div className="bg-[#003366] text-white p-8 md:p-12 md:pb-32 w-full md:w-[75%] relative z-10 shadow-lg md:rounded-lg">
-                        <h2 className="font-calsans text-2xl sm:text-3xl text-center md:text-left mb-6">
+                        <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center md:text-justify mb-6">
                             Quando o processo funciona bem
                         </h2>
-                        <p className="md:text-lg mb-4 text-justify md:text-left">
+                        <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-4 text-justify md:text-justify">
                             Como pais e jovens podem compartilhar progressivamente entre si a responsabilidade do cateterismo urinário intermitente?
                         </p>
-                        <p className="md:text-lg text-justify md:text-left">
+                        <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-justify">
                             A independência na técnica não acontece de uma hora para outra, ela é construída aos poucos, juntos. Pais e filhos aprendem a dividir responsabilidades, errar, ajustar e crescer nesse processo. Entender como isso funciona ajuda toda a família a caminhar com mais segurança.<sup>5</sup>
                         </p>
                     </div>
 
                     {/* Caixa Amarela (Sobe e sobrepõe apenas a área vazia do azul) */}
                     <div className="bg-[#FFC94B] w-full md:w-[70%] relative z-20 md:-mt-24 p-8 md:p-12 flex justify-center items-center self-end shadow-xl md:rounded-lg">
-                        <Image 
-                            src="/enfermeiro1.png" 
-                            alt="Família e médicos felizes" 
-                            width={500} height={350} 
-                            className="w-full max-w-[450px] h-auto object-contain"
-                        />
+                        <div className="relative">
+                            <Image
+                                src="/enfermeiro1.png"
+                                alt="Família e médicos felizes"
+                                width={500} height={350}
+                                className="w-full max-w-[450px] h-auto object-contain"
+                            />
+                            <span className="absolute top-0 right-4 text-xl">*</span>
+                        </div>
                     </div>
 
                 </div>
@@ -289,7 +295,7 @@ export default function EstrategiasFacilitam() {
             {/* 9. REFERÊNCIAS (Fundo Branco / Texto Preto) */}
             <section className="w-full bg-white text-black py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <Divisao className="mb-12" />
+                    <Divider className="mb-12" />
                     
                     <References references={listaReferencias} />
 

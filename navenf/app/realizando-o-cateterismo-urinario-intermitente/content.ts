@@ -6,7 +6,7 @@ const content = {
             id: 1,
             title: 'Cateterismo urinário intermitente',
             text: [
-                'Os objetivos do tratamento e cuidado urológico de indivíduos com mielo concentram-se na manutenção da função renal normal em todas as idades, na transição pelas fases de continência urinária e na conquista da independência nos cuidados pessoais à medida que o envelhecimento progride na vida adulta.1',
+                ['Os objetivos do tratamento e cuidado urológico de indivíduos com mielo concentram-se na manutenção da função renal normal em todas as idades, na transição pelas fases de continência urinária e na conquista da independência nos cuidados pessoais à medida que o envelhecimento progride na vida adulta.', '1'],
                 'O cateterismo urinário intermitente é um procedimento seguro para esvaziar a bexiga. Ele ajuda a proteger os rins e evita infecções em pessoas com mielo.  ',
                 'O passo a passo deve ser feito com cuidado e higiene. Veja como realizar o cateterismo urinário intermitente: '
             ]

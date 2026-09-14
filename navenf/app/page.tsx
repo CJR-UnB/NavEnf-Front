@@ -1,7 +1,7 @@
 'use client';
 
 import HeaderHome from "@/components/headerHome";
-import Divisao from "@/components/Divisao";
+import Divider from "@/components/Divider";
 import FotoEstilizada from "@/components/FotoEstilizada";
 import Image from "next/image";
 import { sobreNosContent } from '@/app/content'; 
@@ -14,33 +14,33 @@ export default function Home() {
         <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
           
             <HeaderHome 
-                imageSrc={"/assets/home/bemVindo.png"} 
+                imageSrc={"/home/bemVindo.png"}
             />
 
             {/* Container Global usando o exato padrão de fundo e padding */}
             <div className="w-full bg-[#FFFFFF] px-5 py-10 text-black sm:px-8 sm:py-12 md:px-12 md:py-16 lg:px-16 lg:py-20 flex flex-col items-center">
                 
                 {/* --- SEÇÃO 1: SOBRE NÓS --- */}
-                <div className="mx-auto flex w-full max-w-[1000px] flex-col gap-6 md:gap-8 items-center">
+                <div id="sobre-nos" className="mx-auto flex w-full max-w-[1000px] flex-col gap-6 md:gap-8 items-center scroll-mt-[100px] md:scroll-mt-[120px] lg:scroll-mt-[145px]">
                     
-                    <h2 className="text-center font-['Cal Sans'] text-[30px] font-bold leading-[1.15] tracking-normal sm:text-[36px] md:text-[42px] lg:text-[55px]">
+                    <h2 className="text-center font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1]">
                         {sobreNosContent.title[1]}
                     </h2>
 
-                    <h3 className="text-center font-[] text-[20px] font-normal italic leading-[1.15] tracking-normal text-[#003366] sm:text-[22px] md:text-[24px] lg:text-[28px]">
+                    <h3 className="text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal italic leading-[1.35] text-[#003366]">
                         {sobreNosContent.subtitle}
                     </h3>
 
-                    <Divisao className="relative w-full max-w-[450px] h-6 md:h-10 mt-2 mb-4"/>
+                    <Divider className="relative w-full max-w-[450px] h-6 md:h-10 mt-2 mb-4"/>
 
                     <div className="w-full flex flex-col gap-5 md:gap-6">
-                        <p className="text-justify --font-atkinson text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
+                        <p className="text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             {sobreNosContent.texts[1]}
                         </p>
-                        <p className="text-justify --font-atkinson text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
+                        <p className="text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             {sobreNosContent.texts[2]}
                         </p>
-                        <p className="text-justify --font-atkinson text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px]">
+                        <p className="text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             {sobreNosContent.texts[3]}
                         </p>
                     </div>
@@ -56,26 +56,31 @@ export default function Home() {
                     </div>
 
                     {/* Container do Vídeo */}
-                    <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black mt-6 md:mt-8">
-                        <video 
-                            className="w-full h-full object-cover"
-                            controls 
-                            preload="metadata" 
-                        >
-                            <source src={sobreNosContent.videoSources.mp4} type="video/mp4" />
-                            <p className="text-white text-center p-4 --font-atkinson">
-                                {sobreNosContent.videoSources.fallbackMessage}
-                            </p>
-                        </video>
+                    <div className="w-full mt-6 md:mt-8">
+                        <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black">
+                            <video
+                                className="w-full h-full object-cover"
+                                controls
+                                preload="metadata"
+                            >
+                                <source src={sobreNosContent.videoSources.mp4} type="video/mp4" />
+                                <p className="text-white text-center p-4 font-atkinson">
+                                    {sobreNosContent.videoSources.fallbackMessage}
+                                </p>
+                            </video>
+                        </div>
+                        <p className="w-full mt-1 text-right text-[12px] [font-style:oblique_8deg] text-gray-500 font-atkinson sm:text-[13px]">
+                            Fonte: gerada por Vidnoz IA em 12 de agosto de 2026
+                        </p>
                     </div>
                 </div>
 
                 {/* --- SEÇÃO 2: CONHECENDO MIELO E CATETERISMO --- */}
-                <div className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8 items-center">
+                <div id="espinha-bifida" className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8 items-center scroll-mt-[100px] md:scroll-mt-[120px] lg:scroll-mt-[145px]">
 
-                    <Divisao className="relative w-full max-w-[450px] h-6 md:h-10"/>
+                    <Divider className="relative w-full max-w-[450px] h-6 md:h-10"/>
 
-                    <h2 className="text-center font-['Cal Sans'] text-[30px] font-bold leading-[1.15] tracking-normal sm:text-[36px] md:text-[42px] lg:text-[48px] max-w-[950px]">
+                    <h2 className="text-center font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] max-w-[950px]">
                         {sobreNosContent.title[2]}
                     </h2>
 
@@ -105,9 +110,9 @@ export default function Home() {
                 </div>
 
                 {/* --- SEÇÃO 3: AUTOGESTÃO --- */}
-                <div className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8 items-center">
+                <div id="autogestao" className="mx-auto mt-16 flex w-full max-w-[1000px] flex-col gap-6 md:mt-20 md:gap-8 items-center scroll-mt-[100px] md:scroll-mt-[120px] lg:scroll-mt-[145px]">
 
-                    <h2 className="text-center font-['Cal Sans'] text-[30px] font-bold leading-[1.15] tracking-normal sm:text-[36px] md:text-[42px] lg:text-[48px]">
+                    <h2 className="text-center font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1]">
                         {sobreNosContent.title[3]}
                     </h2>
 
@@ -140,39 +145,50 @@ export default function Home() {
             </div> {/* Fim do Container Global Bege */}
 
             {/* --- SEÇÃO 4: BARRA EXPANSÍVEL --- */}
-            <BarraFundo titulo={sobreNosContent.title[4]}>
+            <BarraFundo id="cuidador" titulo={sobreNosContent.title[4]}>
                 
                 <div className="flex flex-col items-center w-full pt-0">
                     
                     {/* Adicionado text-black aqui */}
-                    <p className="text-black text-center --font-atkinson text-[18px] font-normal leading-[1.5] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px] max-w-[800px] mb-8 md:mb-10">
+                    <p className="text-black text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] max-w-[800px] mb-8 md:mb-10">
                         {sobreNosContent.texts[10]}
                     </p>
 
-                    <FotoEstilizada 
-                        src={sobreNosContent.images[7]}
-                        alt="Ilustração Cuidador e Paciente"
-                        variante="diagonal"
-                        corSombra="bg-[#0F5A3E]" 
-                        posicaoSombra="inferior-direita"
-                        className="w-full max-w-[800px] aspect-[4/3] md:aspect-[16/9] mb-12 md:mb-16 shrink-0" 
-                    />
+                    <div className="w-full max-w-[800px] mb-12 md:mb-16">
+                        <FotoEstilizada
+                            src={sobreNosContent.images[7]}
+                            alt="Ilustração Cuidador e Paciente"
+                            variante="diagonal"
+                            corSombra="bg-[#003366]"
+                            posicaoSombra="inferior-direita"
+                            className="w-full aspect-[3/2] shrink-0"
+                            sizes="(max-width: 800px) 100vw, 800px"
+                        />
+                        <p className="relative z-10 mt-5 w-full text-center text-[12px] text-gray-500 font-atkinson sm:text-[13px] md:mt-7">
+                            Foto gerada por Chat GPT em 31 de agosto de 2026
+                        </p>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 w-full max-w-[700px]">
                         
                         {/* Card Esquerda - Direitos */}
                         <div className="flex flex-col items-center h-full">
-                            <FotoEstilizada 
-                                src={sobreNosContent.images[8]}
-                                alt="Direitos da pessoa com Mielo"
-                                variante="diagonal"
-                                corSombra="bg-[#003366]"
-                                posicaoSombra="inferior-esquerda"
-                                className="w-full max-w-[300px] aspect-[4/3] mb-6 md:mb-8 shrink-0"
-                            />
-                            
+                            <div className="w-full max-w-[300px] mb-6 md:mb-8">
+                                <FotoEstilizada
+                                    src={sobreNosContent.images[8]}
+                                    alt="Direitos da pessoa com Mielo"
+                                    variante="diagonal"
+                                    corSombra="bg-[#003366]"
+                                    posicaoSombra="inferior-esquerda"
+                                    className="w-full aspect-[4/3] shrink-0"
+                                />
+                                <p className="relative z-10 mt-5 w-full text-center text-[11px] text-gray-500 font-atkinson sm:text-[11px] md:mt-7">
+                                    Foto gerada por Figma AI Agent em 9 de setembro de 2026
+                                </p>
+                            </div>
+
                             {/* Adicionado text-black aqui */}
-                            <p className="text-black text-center --font-atkinson text-[18px] font-normal italic leading-[1.25] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px] max-w-[250px] mb-4 md:mb-5">
+                            <p className="text-black text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal italic leading-[1.25] max-w-[250px] mb-4 md:mb-5">
                                 {sobreNosContent.texts[11]}
                             </p>
                             
@@ -183,17 +199,22 @@ export default function Home() {
 
                         {/* Card Direita - Relatos */}
                         <div className="flex flex-col items-center h-full">
-                            <FotoEstilizada 
-                                src={sobreNosContent.images[9]}
-                                alt="Relatos dos cuidadores"
-                                variante="diagonal"
-                                corSombra="bg-[#003366]"
-                                posicaoSombra="inferior-esquerda"
-                                className="w-full max-w-[300px] aspect-[4/3] mb-6 md:mb-8 shrink-0"
-                            />
-                            
+                            <div className="w-full max-w-[300px] mb-6 md:mb-8">
+                                <FotoEstilizada
+                                    src={sobreNosContent.images[9]}
+                                    alt="Relatos dos cuidadores"
+                                    variante="diagonal"
+                                    corSombra="bg-[#003366]"
+                                    posicaoSombra="inferior-esquerda"
+                                    className="w-full aspect-[4/3] shrink-0"
+                                />
+                                <p className="relative z-10 mt-5 w-full text-center text-[11px] text-gray-500 font-atkinson sm:text-[11px] md:mt-7">
+                                    Foto gerada por Figma AI Agent em 9 de setembro de 2026
+                                </p>
+                            </div>
+
                             {/* Adicionado text-black aqui */}
-                            <p className="text-black text-center --font-atkinson text-[18px] font-normal italic leading-[1.25] tracking-normal sm:text-[20px] md:text-[22px] lg:text-[24px] max-w-[250px] mb-4 md:mb-5">
+                            <p className="text-black text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal italic leading-[1.25] max-w-[250px] mb-4 md:mb-5">
                                 {sobreNosContent.texts[12]}
                             </p>
                             
@@ -204,7 +225,7 @@ export default function Home() {
 
                     </div>
 
-                    <Divisao className="relative w-full max-w-[450px] h-6 md:h-10 mt-12 mb-4" />
+                    <Divider className="relative w-full max-w-[450px] h-6 md:h-10 mt-12 mb-4" />
 
                 </div>
             </BarraFundo>

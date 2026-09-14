@@ -25,7 +25,7 @@ export default function TextoDestacado({ texto, corFundo, corSombra }: TextoDest
                      rounded-tl-[20px] rounded-tr-[80px] rounded-br-[20px] rounded-bl-[80px]"
           style={{ backgroundColor: corFundo }}
         >
-          <p className="text-white text-base sm:text-lg md:text-2xl text-center leading-relaxed font-medium">
+          <p className="text-white font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] text-center leading-[1.35] font-medium">
             {texto}
           </p>
         </div>

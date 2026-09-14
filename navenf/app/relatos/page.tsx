@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divisao from "@/components/Divisao";
+import Divider from "@/components/Divider";
 import References from "@/components/References";
 import TextoDestacado from "@/components/texto_destacado";
 
@@ -29,7 +29,7 @@ export default function RelatosCuidadores() {
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
                     
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-4">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-4">
                         Experiências/Perspectivas do cuidador
                     </h2>
 
@@ -103,8 +103,9 @@ export default function RelatosCuidadores() {
                         />
                     </div>
 
-                    <div className="flex justify-center mb-16">
+                    <div className="flex justify-center mb-16 relative">
                         <Image src="/relatos3.png" alt="Família com médico e banheiro adaptado" width={600} height={350} className="w-full max-w-[550px] h-auto object-contain" />
+                        <span className="absolute top-10 right-[15%] text-xl">*</span>
                     </div>
 
                     {/* BLOCO 4 */}
@@ -154,7 +155,7 @@ export default function RelatosCuidadores() {
             {/* 3. REFERÊNCIAS */}
             <section className="w-full bg-white text-black py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <Divisao className="mb-12" />
+                    <Divider className="mb-12" />
                     <References references={listaReferencias} />
                     <div className="mt-8 text-sm md:text-base text-black">
                         <p>*Fonte: gerada por Chat GPT em 9 de setembro de 2026.</p>

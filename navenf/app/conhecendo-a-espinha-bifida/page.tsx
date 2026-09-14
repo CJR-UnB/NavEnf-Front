@@ -1,16 +1,20 @@
-<<<<<<< HEAD
 import { References } from '../../components';
-=======
-import { References } from '../components';
+import Divider from '../../components/Divider';
 import Image from 'next/image';
->>>>>>> origin/feature/conhecendo-a-espinha-bifida
 import { content } from './content';
 // import Divider from '../components/index';
 
 const ConhecendoPage = () => {
 	return (
 		<div>
-			{/* <h1>{content.title}</h1> */}
+			{/* CABEÇALHO (Gradiente Verde para Azul) */}
+			<section className="w-full bg-gradient-to-b from-[#006633] to-[#003366] py-16 sm:py-24 px-6 md:px-12 flex items-center justify-center">
+				<div className="max-w-[900px] mx-auto">
+					<h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-calsans text-center leading-tight">
+						{content.title}
+					</h1>
+				</div>
+			</section>
 
 			{/* SESSÃO 1 */}
 			<section className="w-[90%] max-w-[1100px] mx-auto mb-[4rem]">
@@ -58,6 +62,7 @@ const ConhecendoPage = () => {
 								<strong>
 									{content.session[0].text[3][1]}
 								</strong>
+								<sup>{content.session[0].text[3][2]}</sup>
 							</p>
 						</div>
 					</div>
@@ -85,13 +90,17 @@ const ConhecendoPage = () => {
 			<section className="w-[90%] max-w-[1100px] mx-auto mt-[4rem] mb-[4rem]">
 				<div className="lg:flex-row items-center justify-center gap-[4%]">
 					<div className="w-full flex justify-center items-center mb-[3rem]">
-						<Image
-							src={`/assets/${content.session[2].image}.png`}
-							alt="espinha"
-							width={1000}
-							height={1000}
-							className="w-[clamp(240px,35vw,450px)] h-auto"
-						/>
+						<div className="relative w-[clamp(240px,35vw,450px)]">
+							<Image
+								src={`/assets/${content.session[2].image}.png`}
+								alt="espinha"
+								width={1000}
+								height={1000}
+								className="w-full h-auto"
+							/>
+							<span className="absolute -top-1 -right-4 text-xl font-bold text-black">*</span>
+							<span className="absolute -bottom-1 -right-4 text-sm font-bold text-black">3</span>
+						</div>
 					</div>
 
 					<div className="w-full">
@@ -105,7 +114,8 @@ const ConhecendoPage = () => {
 							<p
 								className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify"
 							>
-								{content.session[2].text[0]}
+								{content.session[2].text[0][0]}
+								<sup>{content.session[2].text[0][1]}</sup>
 							</p>
 
 							<p
@@ -264,7 +274,7 @@ const ConhecendoPage = () => {
 				</div>
 			</section>
 
-			{/* <Divider /> */}
+			<Divider className="mt-12 mb-4" />
 
 			<References references={content.references} />
 		</div>

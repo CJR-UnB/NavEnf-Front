@@ -13,7 +13,7 @@ export default function CardIcone({ texto, imagem, link }: CardIconeProps) {
       
       {/* 1. TEXTO */}
       <div className="flex-1 flex items-end justify-center pb-4 w-full max-w-[260px]">
-        <p className="text-center --font-atkinson text-[18px] font-medium leading-[1.25] tracking-normal text-black sm:text-[20px] md:text-[22px] lg:text-[22px] w-full">
+        <p className="text-center --font-atkinson [font-style:oblique_8deg] text-[18px] font-medium leading-[1.25] tracking-normal text-black sm:text-[20px] md:text-[22px] lg:text-[22px] w-full">
           {texto}
         </p>
       </div>

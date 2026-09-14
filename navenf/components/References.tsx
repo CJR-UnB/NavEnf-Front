@@ -1,19 +1,7 @@
-<<<<<<< HEAD:navenf/components/References.tsx
-
-const References = ({ references }) => {
-	return (
-		<div className="mx-auto w-full max-w-[1000px] px-5 py-10 sm:px-8 sm:py-12 md:px-12 md:py-16 lg:px-16 lg:py-20">
-			<div>
-				<h2 className="mb-12 text-center font-['Castoro'] text-[30px] font-normal leading-[1.15] tracking-normal sm:mb-14 sm:text-[36px] md:mb-16 md:text-[42px] lg:text-[48px]">
-					REFERÊNCIAS:
-				</h2>
-=======
-import Divider from './Divider';
 interface Reference {
     id: number;
     text: string;
 }
->>>>>>> origin/feature/references:navenf/app/components/References.tsx
 
 interface ReferencesProps {
     references: Reference[];

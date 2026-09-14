@@ -13,6 +13,8 @@ interface FotoEstilizadaProps extends HTMLAttributes<HTMLDivElement> {
   posicaoSombra?: 'inferior-esquerda' | 'inferior-direita' | 'superior-esquerda' | 'superior-direita';
   /** Controle de tamanho do container da imagem */
   className?: string;
+  /** Dica de tamanho renderizado para o Next/Image escolher a resolução correta */
+  sizes?: string;
 }
 
 export default function FotoEstilizada({
@@ -22,6 +24,7 @@ export default function FotoEstilizada({
   corSombra = 'bg-blue-900', // cor padrão de fallback
   posicaoSombra = 'inferior-esquerda',
   className = 'w-full max-w-sm aspect-4/3', // tamanho padrão
+  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
   ...props
 }: FotoEstilizadaProps) {
   
@@ -57,7 +60,7 @@ export default function FotoEstilizada({
           alt={alt}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes={sizes}
         />
       </div>
     </div>

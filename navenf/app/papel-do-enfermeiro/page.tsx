@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link"; 
-import Divisao from "@/components/Divisao";
+import Divider from "@/components/Divider";
 import References from "@/components/References";
 
 export default function PapelDoEnfermeiro() {
@@ -28,7 +28,7 @@ export default function PapelDoEnfermeiro() {
 
             {/* 2. CONTEXTO E INFORMAÇÕES (Fundo Azul Escuro) */}
             <section className="w-full bg-[#003366] text-white py-12 px-6 md:px-12">
-                <div className="max-w-225 mx-auto space-y-8 md:text-lg leading-relaxed text-justify md:text-left">
+                <div className="max-w-225 mx-auto space-y-8 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify">
                     
                     <p>
                         Uma equipe de Enfermagem irá trabalhar junto com o urologista nas investigações para buscar a melhor solução para o seu filho. O enfermeiro irá monitorar as funções urinárias e intestinais durante o desenvolvimento do seu filho.
@@ -90,29 +90,29 @@ export default function PapelDoEnfermeiro() {
             {/* 3. TREINAMENTO E EDUCAÇÃO (Fundo Branco com blocos coloridos) */}
             <section className="w-full bg-white text-gray-900 py-16 overflow-hidden">
                 <div className="max-w-225 mx-auto px-6 md:px-12 mb-10">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">
                         1. Treinamento e educação em saúde
                     </h2>
-                    <p className="text-center md:text-lg">
+                    <p className="text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                         O enfermeiro ensina o passo a passo do cateterismo urinário intermitente.<br className="hidden sm:block" />
                         Esse treinamento inclui:
                     </p>
                 </div>
 
-                <div className="w-full flex flex-col space-y-6 md:text-lg">
+                <div className="w-full flex flex-col space-y-6 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                     {/* Bloco Azul */}
                     <div className="bg-[#59ACFF] w-[95%] md:w-[85%] lg:w-[75%] mr-auto py-6 px-6 md:px-16 flex items-center justify-end">
-                        <div className="max-w-175 w-full text-left">
+                        <div className="max-w-175 w-full text-justify">
                             <p><strong>Higiene correta:</strong> Lavar bem as mãos e limpar a região íntima antes de usar a sonda para não levar bactérias para a bexiga.</p>
                         </div>
                     </div>
 
                     {/* Bloco Amarelo */}
                     <div className="bg-[#FFC94B] w-[95%] md:w-[85%] lg:w-[75%] ml-auto py-6 px-6 md:px-16 flex items-center justify-start">
-                        <div className="max-w-175 w-full text-left">
+                        <div className="max-w-175 w-full text-justify">
                             <p>
                                 <strong>Uso dos materiais:</strong> Explicar a diferença e o uso correto de sondas comuns (de PVC) ou{" "}
-                                <Link href="/sondas" className="underline hover:opacity-70 transition-opacity cursor-pointer">
+                                <Link href="https://mieloblog.com.br/wp-content/uploads/2016/01/APOSTILA_MAOS_UNIDAS.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70 transition-opacity cursor-pointer">
                                     sondas hidrofílicas
                                 </Link>
                                 , que já vêm lubrificadas e agridem menos o canal da urina.
@@ -122,7 +122,7 @@ export default function PapelDoEnfermeiro() {
 
                     {/* Bloco Verde */}
                     <div className="bg-[#80D960] w-[95%] md:w-[85%] lg:w-[75%] mr-auto py-6 px-6 md:px-16 flex items-center justify-end">
-                        <div className="max-w-175 w-full text-left">
+                        <div className="max-w-175 w-full text-justify">
                             <p><strong>Técnica de inserção:</strong> Ensinar como colocar a sonda de forma suave até a urina começar a sair.</p>
                         </div>
                     </div>
@@ -132,12 +132,12 @@ export default function PapelDoEnfermeiro() {
             {/* 4. ESTÍMULO À AUTONOMIA E INDEPENDÊNCIA (Fundo Azul Escuro) */}
             <section className="w-full bg-[#003366] text-white py-16 px-6 md:px-12">
                 <div className="max-w-225 mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-10">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-10">
                         2. Estímulo à autonomia e independência
                     </h2>
                     
                     <div className="flex flex-col md:flex-row items-center gap-10">
-                        <div className="w-full md:w-1/2 md:text-lg leading-relaxed text-justify md:text-left">
+                        <div className="w-full md:w-1/2 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify">
                             <p>
                                 À medida que a criança com mielo cresce, o enfermeiro trabalha para que ela faça o autocateterismo e quando não é possível, ensina o cuidador. O objetivo é fazer o paciente entender sua rotina e conseguir esvaziar a própria bexiga sozinho na escola ou em passeios, ganhando liberdade e melhorando sua autoestima.
                             </p>
@@ -159,14 +159,14 @@ export default function PapelDoEnfermeiro() {
             {/* 5. PREVENÇÃO E MONITORAMENTO DE COMPLICAÇÕES (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-225 mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-8">
                         3. Prevenção e monitoramento de complicações
                     </h2>
-                    <p className="md:text-lg leading-relaxed mb-6">
+                    <p className="text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-6">
                         O enfermeiro acompanha o paciente de perto para evitar problemas de saúde comuns. Ele orienta a família a:
                     </p>
-                    
-                    <ul className="list-disc pl-5 md:pl-8 space-y-3 md:text-lg leading-relaxed mb-10">
+
+                    <ul className="list-disc pl-5 md:pl-8 space-y-3 text-justify font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-10">
                         <li>Seguir os horários certos (geralmente a cada 4 ou 6 horas) para a bexiga não encher demais.</li>
                         <li>Ficar atento a sinais de infecção urinária, como urina com cheiro forte, cor escura, febre ou dor nas costas.</li>
                         <li>Observar sangramentos ou feridas causadas pela passagem da sonda.</li>
@@ -188,10 +188,10 @@ export default function PapelDoEnfermeiro() {
             {/* 6. APOIO EMOCIONAL E REDE DE CUIDADOS (Fundo Amarelo) */}
             <section className="w-full bg-[#FFC94B] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-225 mx-auto text-center">
-                    <h2 className="font-calsans text-2xl sm:text-3xl mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] mb-6">
                         4. Apoio emocional e rede de cuidados
                     </h2>
-                    <p className="md:text-lg leading-relaxed text-justify md:text-center">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify">
                         Adaptar-se à rotina de passar uma sonda várias vezes ao dia pode ser difícil e cansativo para a família. O enfermeiro serve como uma ponte de apoio, ajudando a amenizar medos, esclarecer dúvidas e incentivar a continuidade do tratamento. Além disso, ele ajuda a organizar a quantidade de materiais necessários que a família deve receber da Unidade Básica de Saúde.<sup>4,5</sup>
                     </p>
                 </div>
@@ -201,7 +201,7 @@ export default function PapelDoEnfermeiro() {
             <section className="w-full bg-white py-16 px-6 md:px-12 text-black">
                 <div className="max-w-225 mx-auto">
                     {/* Componente de Divisão (Bolinhas) */}
-                    <Divisao className="mb-12" />
+                    <Divider className="mb-12" />
                     
                     {/* Componente de Referências */}
                     <References references={listaReferencias} />

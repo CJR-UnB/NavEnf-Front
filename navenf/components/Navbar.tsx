@@ -8,8 +8,8 @@ const NavBar = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState(false);
 	const menuItems = [
 		{ id: 1, label: 'Sobre nós', href: '/#sobre-nos' },
-		{ id: 2, label: 'Autogestão', href: '/#autogestao' },
-		{ id: 3, label: 'Espinha Bífida e Cateterismo', href: '/#espinha-bifida' },
+		{ id: 2, label: 'Mielo e Cateterismo Uninário Intermitente', href: '/#espinha-bifida' },
+		{ id: 3, label: 'Autogestão', href: '/#autogestao' },
 		{ id: 4, label: 'Dê esse passo, cuidador', href: '/#cuidador' },
 	]
 
@@ -18,7 +18,7 @@ const NavBar = () => {
 			<nav className="mx-auto flex min-h-[90px] max-w-[1440px] items-center justify-between px-6 md:min-h-[110px] md:px-10 lg:min-h-[135px] lg:px-12">
 				<Link href="/">
 					<Image
-						src="/logo.png"
+						src="/assets/logo.png"
 						alt="Logo"
 						width={183}
 						height={133}

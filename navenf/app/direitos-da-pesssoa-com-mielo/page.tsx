@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Divisao from "@/components/Divisao";
+import Divider from "@/components/Divider";
 import References from "@/components/References";
 
 export default function DireitosPessoaComMielo() {
@@ -30,7 +30,7 @@ export default function DireitosPessoaComMielo() {
             {/* 2. INTRODUÇÃO E PRINCIPAIS DIREITOS (Fundo Branco) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <p className="md:text-lg leading-relaxed text-justify md:text-left mb-8">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left mb-8">
                         Pacientes com mielo (especialmente a forma mielomeningocele) são amparados pela Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência),{" "}
                         <Link 
                             href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" 
@@ -55,11 +55,11 @@ export default function DireitosPessoaComMielo() {
                         <span className="absolute top-4 right-[15%] text-xl">*</span>
                     </div>
 
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-8">
                         Os principais direitos incluem:<sup>1</sup>
                     </h2>
 
-                    <div className="space-y-6 md:text-lg leading-relaxed text-justify md:text-left">
+                    <div className="space-y-6 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                         <p>
                             <strong>Saúde Integral e Tratamento:</strong> Acesso a cirurgias, terapias de reabilitação, sondas, medicamentos e acompanhamento multidisciplinar pelo SUS, incluindo centros de referência.
                         </p>
@@ -82,12 +82,12 @@ export default function DireitosPessoaComMielo() {
             {/* 3. OUTRAS LEIS (Fundo Branco com blocos coloridos) */}
             <section className="w-full bg-white text-gray-900 py-12 overflow-hidden">
                 <div className="max-w-[900px] mx-auto px-6 md:px-12 mb-8">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center">
                         Outras leis garantem o direito a pacientes com mielo:
                     </h2>
                 </div>
 
-                <div className="w-full flex flex-col space-y-6 md:text-lg">
+                <div className="w-full flex flex-col space-y-6 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                     {/* Bloco Amarelo */}
                     <div className="bg-[#FFC94B] w-[95%] md:w-[85%] mr-auto py-6 px-6 md:px-16 flex items-center justify-end">
                         <div className="max-w-[750px] w-full text-left">
@@ -120,14 +120,14 @@ export default function DireitosPessoaComMielo() {
             {/* 4. AQUISIÇÃO DE MATERIAL E DOCUMENTAÇÃO (Fundo Branco com blocos) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto mb-10 text-center md:text-left">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">
                         Aquisição de material para cateterismo<br className="hidden sm:block" /> urinário intermitente
                     </h2>
-                    <p className="md:text-lg leading-relaxed text-justify md:text-left mb-12">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left mb-12">
                         Pacientes com mielomeningocele (espinha bífida) e bexiga neurogênica têm o direito legal garantido de receber cateteres urinários e insumos gratuitamente. A dispensação é respaldada pela Lei Orgânica da Saúde (Lei 8.080/90) e pela Lei Brasileira de Inclusão (Lei 13.146/15), com o cateter hidrofílico incorporado pelo Ministério da Saúde.<sup>1,3</sup>
                     </p>
 
-                    <h3 className="font-calsans text-2xl sm:text-3xl text-center mb-10">
+                    <h3 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-10">
                         Documentação necessária:
                     </h3>
 
@@ -138,7 +138,7 @@ export default function DireitosPessoaComMielo() {
                             <div className="bg-white p-3 rounded shadow-sm shrink-0">
                                 <Image src="/direitos2.png" alt="Ícone de Laudo Médico" width={60} height={70} className="w-[50px] h-auto" />
                             </div>
-                            <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:text-left">
+                            <p className="text-gray-900 text-sm sm:text-base font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                                 <strong>Laudo Médico:</strong> Um relatório atualizado emitido por um médico urologista ou neurologista da rede pública ou conveniada ao SUS. O laudo deve conter o diagnóstico (Espinha Bífida/Mielomeningocele e Bexiga Neurogênica), o CID-10, o material prescrito (tipo de cateter e quantidade exata diária) e a justificativa da necessidade.
                             </p>
                         </div>
@@ -148,7 +148,7 @@ export default function DireitosPessoaComMielo() {
                             <div className="shrink-0">
                                 <Image src="/direitos3.png" alt="Ícone de Receituário" width={60} height={70} className="w-[50px] h-auto" />
                             </div>
-                            <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:text-left">
+                            <p className="text-gray-900 text-sm sm:text-base font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                                 <strong>Receituário:</strong> Com a prescrição dos materiais.
                             </p>
                         </div>
@@ -158,7 +158,7 @@ export default function DireitosPessoaComMielo() {
                             <div className="shrink-0">
                                 <Image src="/direitos4.png" alt="Ícone de Documentação" width={60} height={70} className="w-[50px] h-auto" />
                             </div>
-                            <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:text-left">
+                            <p className="text-gray-900 text-sm sm:text-base font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                                 <strong>Documentação Pessoal:</strong> Identidade, CPF, cartão do SUS e comprovante de residência atualizado.
                             </p>
                         </div>
@@ -169,10 +169,10 @@ export default function DireitosPessoaComMielo() {
             {/* 5. ONDE SOLICITAR (Fundo Amarelo) */}
             <section className="w-full bg-[#FFC94B] text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto text-center">
-                    <h2 className="font-calsans text-2xl sm:text-3xl mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] mb-6">
                         Onde solicitar:
                     </h2>
-                    <p className="md:text-lg leading-relaxed max-w-[800px] mx-auto">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] max-w-[800px] mx-auto">
                         UBS (Unidade Básica de Saúde): Dirija-se à UBS mais próxima de sua residência para dar entrada no processo de solicitação de materiais e insumos.
                     </p>
                 </div>
@@ -181,13 +181,13 @@ export default function DireitosPessoaComMielo() {
             {/* 6. CENTROS DE REFERÊNCIA (Fundo Branco com botões arredondados e sombra dura) */}
             <section className="w-full bg-white text-gray-900 py-16 px-6 md:px-12">
                 <div className="max-w-[850px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-12">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-12">
                         Centro de referência para pessoas com<br />Mielo no Brasil
                     </h2>
 
                     <div className="space-y-6">
                         {/* Sarah */}
-                        <div className="bg-[#003366] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#006633] text-center md:text-lg">
+                        <div className="bg-[#003366] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#006633] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p>
                                 <em>Rede Sarah de Hospitais de Reabilitação</em> - Brasília/DF; Salvador/BA; Fortaleza/CE; São Luiz/MA; Rio de Janeiro/RJ; Belo Horizonte/MG; Belém/PA; Macapá/AP -{" "}
                                 <Link href="https://www.sarah.br/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80">
@@ -197,12 +197,12 @@ export default function DireitosPessoaComMielo() {
                         </div>
 
                         {/* HMIB */}
-                        <div className="bg-[#006633] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#FFC94B] text-center md:text-lg">
+                        <div className="bg-[#006633] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#FFC94B] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p><em>Hospital Materno Infantil de Brasília</em> - HMIB (Brasília - DF)</p>
                         </div>
 
                         {/* AACD */}
-                        <div className="bg-[#FFC94B] text-gray-900 font-medium p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#003366] text-center md:text-lg">
+                        <div className="bg-[#FFC94B] text-gray-900 font-medium p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#003366] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p>
                                 <em>Hospital Ortopédico AACD</em> (São Paulo - SP) -{" "}
                                 <Link href="https://hospitalortopedicoaacd.org.br/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80">
@@ -212,7 +212,7 @@ export default function DireitosPessoaComMielo() {
                         </div>
 
                         {/* ABRASSE */}
-                        <div className="bg-[#003366] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#006633] text-center md:text-lg">
+                        <div className="bg-[#003366] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#006633] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p>
                                 <em>ABRASSE</em> (Associação Brasileira de Espinha Bífida) -{" "}
                                 <Link href="https://www.abrasse.com.br/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80">
@@ -222,7 +222,7 @@ export default function DireitosPessoaComMielo() {
                         </div>
 
                         {/* AEB-MT */}
-                        <div className="bg-[#006633] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#FFC94B] text-center md:text-lg">
+                        <div className="bg-[#006633] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#FFC94B] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p><em>AEB-MT</em> (Associação de Espinha Bífida de Mato Grosso)</p>
                         </div>
                     </div>
@@ -232,10 +232,10 @@ export default function DireitosPessoaComMielo() {
             {/* 7. DURANTE VIAGENS AÉREAS (Fundo Azul Escuro) */}
             <section className="w-full bg-[#003366] text-white py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto text-center">
-                    <h2 className="font-calsans text-2xl sm:text-3xl mb-8">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] mb-8">
                         Durante viagens aéreas
                     </h2>
-                    <p className="md:text-lg leading-relaxed text-justify md:text-left">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                         Quem faz cateterismo urinário intermitente tem direito à assistência especial gratuita nos aeroportos e voos. No Brasil, as regras da{" "}
                         <Link 
                             href="https://www.gov.br/anac" 
@@ -253,28 +253,28 @@ export default function DireitosPessoaComMielo() {
             {/* 8. COMO PEDIR ASSISTÊNCIA E BAGAGEM DE MÃO (Fundo Branco com blocos) */}
             <section className="w-full bg-white text-gray-900 py-16 overflow-hidden">
                 <div className="max-w-[900px] mx-auto px-6 md:px-12 mb-12">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">
                         Como pedir a assistência especial
                     </h2>
-                    <p className="md:text-lg mb-6">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-6">
                         Para garantir o suporte, você deve avisar a companhia aérea com antecedência.
                     </p>
-                    <ul className="list-disc pl-5 space-y-4 md:text-lg leading-relaxed text-justify md:text-left mb-16">
+                    <ul className="list-disc pl-5 space-y-4 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left mb-16">
                         <li><strong>Avise com antecedência:</strong> O prazo oficial para pedir a assistência é de no mínimo 48 horas antes do voo.</li>
                         <li><strong>Como solicitar:</strong> Você pode fazer o pedido pelo site da empresa na hora de comprar a passagem. Também pode ligar para o atendimento ao cliente da companhia aérea</li>
                         <li><strong>Apoio no avião:</strong> As empresas aéreas têm comissários de bordo treinados para ajudar você a se deslocar até o banheiro usando uma cadeira de rodas especial de bordo (chamada de cadeira de corredor). No entanto, os comissários não fazem o procedimento do cateterismo urinário intermitente por você.</li>
                     </ul>
 
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-6">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-6">
                         O que levar na bagagem de mão
                     </h2>
-                    <p className="md:text-lg text-center mb-10">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center mb-10">
                         Você deve levar todo o seu material médico na cabine com você. Se a mala despachada sumir, você não ficará sem as sondas.
                     </p>
                 </div>
 
                 {/* Blocos escalonados */}
-                <div className="w-full flex flex-col space-y-6 md:text-lg">
+                <div className="w-full flex flex-col space-y-6 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                     {/* Bloco 1: Amarelo (Sondas extras) */}
                     <div className="bg-[#FFC94B] w-[95%] md:w-[85%] mr-auto py-6 px-6 md:px-16 flex items-center justify-end">
                         <div className="max-w-[750px] w-full flex flex-col md:flex-row items-center gap-6">
@@ -310,13 +310,13 @@ export default function DireitosPessoaComMielo() {
             {/* 9. CUIDADOS IMPORTANTES COM A SEGURANÇA (RAIO-X) (Fundo Verde Escuro) */}
             <section className="w-full bg-[#006633] text-white py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="font-calsans text-2xl sm:text-3xl text-center mb-8">
+                    <h2 className="font-cal text-[clamp(2rem,3vw,3.25rem)] font-normal leading-[1.1] text-center mb-8">
                         Cuidados Importantes com a Segurança (Raio-X)
                     </h2>
-                    <p className="md:text-lg mb-8 text-justify md:text-left">
+                    <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] mb-8 text-justify md:text-left">
                         Passar pelo raio-X com materiais médicos é simples, mas exige atenção para evitar contaminação.
                     </p>
-                    <ul className="list-disc pl-5 space-y-4 md:text-lg leading-relaxed text-justify md:text-left">
+                    <ul className="list-disc pl-5 space-y-4 font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                         <li>
                             <strong>Líquidos e géis:</strong> O gel lubrificante (como xilocaína) entra na regra de líquidos em voos. Em voos internacionais, os tubos devem ter no máximo 100 ml cada e estar dentro de um saquinho plástico transparente.
                         </li>
@@ -333,7 +333,7 @@ export default function DireitosPessoaComMielo() {
             {/* 10. REFERÊNCIAS */}
             <section className="w-full bg-white text-black py-16 px-6 md:px-12">
                 <div className="max-w-[900px] mx-auto">
-                    <Divisao className="mb-12" />
+                    <Divider className="mb-12" />
                     
                     <References references={listaReferencias} />
 
