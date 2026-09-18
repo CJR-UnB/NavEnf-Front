@@ -196,11 +196,6 @@ export default function DireitosPessoaComMielo() {
                             </p>
                         </div>
 
-                        {/* HMIB */}
-                        <div className="bg-[#006633] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#FFC94B] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
-                            <p><em>Hospital Materno Infantil de Brasília</em> - HMIB (Brasília - DF)</p>
-                        </div>
-
                         {/* AACD */}
                         <div className="bg-[#FFC94B] text-gray-900 font-medium p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#003366] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
                             <p>
@@ -219,11 +214,6 @@ export default function DireitosPessoaComMielo() {
                                     https://www.abrasse.com.br/
                                 </Link>
                             </p>
-                        </div>
-
-                        {/* AEB-MT */}
-                        <div className="bg-[#006633] text-white p-6 rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[50px] shadow-[8px_8px_0px_#FFC94B] text-center font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35]">
-                            <p><em>AEB-MT</em> (Associação de Espinha Bífida de Mato Grosso)</p>
                         </div>
                     </div>
                 </div>
@@ -324,7 +314,7 @@ export default function DireitosPessoaComMielo() {
                             <strong>Mostre o laudo:</strong> Deixe o laudo médico fácil de pegar. Se os agentes de segurança do aeroporto tiverem dúvidas sobre as sondas ou os géis, basta mostrar o papel do médico.
                         </li>
                         <li>
-                            <strong>Cuidado com a higiene:</strong> Nunca abra a embalagem estéril das sondas para mostrar aos agentes. Se eles precisarem revistar o material, explique que as sondas são estéreis e murcham ou perdem a limpeza se forem abertas.
+                            <strong>Cuidado com a higiene:</strong> Nunca abra a embalagem estéril das sondas para mostrar aos agentes. Se eles precisarem revistar o material, explique que as sondas são estéreis e perdem a limpeza se forem abertas.
                         </li>
                     </ul>
                 </div>

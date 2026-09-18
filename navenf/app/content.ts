@@ -9,8 +9,8 @@ export const sobreNosContent = {
   texts: { 
     1: 'O CUIda Mielo trata-se de uma intervenção virtual de navegação em Enfermagem na promoção do autocuidado apoiado direcionado a cuidadores de crianças e adolescentes com mielomeningocele e usuárias de cateterismo urinário intermitente.',
     2: 'Faz parte de um projeto de Doutorado do Programa de Pós Graduação em Enfermagem (PPGEnf) da Universidade de Brasília - UNB em conjunto com o grupo de pesquisa Atenção à saúde urológica nos ciclos de vida.',
-    3: 'Desenvolvido pelas enfermeiras Ms. Erika Lorena Ramos de Oliveira Silva e Prof. Dra. Gisele Martins, com a colaboração da estudante de graduação em enfermagem Letícia Gonçalves Soares.',
-    4: 'Conhecendo o Mielomeningocele',
+    3: 'Desenvolvido pelas enfermeiras Ms. Erika Lorena Ramos de Oliveira Silva e Profa. Dra. Gisele Martins, com a colaboração da estudante de graduação em enfermagem Letícia Gonçalves Soares.',
+    4: 'Conhecendo a Mielomeningocele',
     5: 'Realizando o Cateterismo Urinário Intermitente',
     6: 'Orientações para cuidadores',
     7: 'Papel do enfermeiro no cuidado urológico',
@@ -20,6 +20,23 @@ export const sobreNosContent = {
     11: 'Direitos da pessoa com Mielo',
     12: 'Relatos dos cuidadores'
   },
+  equipe: [
+    {
+      nome: 'Ms. Erika Lorena Ramos',
+      foto: '/team/erika-lorena-ramos.jpg',
+      lattes: 'http://lattes.cnpq.br/5700754843202234',
+    },
+    {
+      nome: 'Profa. Dra. Gisele Martins',
+      foto: '/team/gisele-martins.jpg',
+      lattes: 'http://lattes.cnpq.br/0938329840216223',
+    },
+    {
+      nome: 'Letícia Gonçalves',
+      foto: '/team/leticia-goncalves.jpg',
+      lattes: 'http://lattes.cnpq.br/7707391556411491',
+    },
+  ],
   images: {
     logos: '/home/logos.png',
     1: '/home/01.png',

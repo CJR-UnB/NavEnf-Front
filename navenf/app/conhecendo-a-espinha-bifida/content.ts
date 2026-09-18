@@ -6,7 +6,7 @@ export const content = {
             title: 'Conhecendo a condição de saúde: Mielo',
             image: 'ultrassom',
             text: [
-                'Mielomeningocele (mielo) significa literalmente "coluna vertebral dividida". A mielomeningocele ocorre quando um bebê está no útero, nos dois primeiros meses de gestação e a coluna vertebral não se fecha completamente.',
+                'Mielomeningocele (mielo) significa literalmente "coluna vertebral dividida". A mielomeningocele ocorre quando um bebê está no útero, durante os dois primeiros meses de gestação, e a coluna vertebral não se fecha completamente.',
                 'A mielo é um dos problemas de desenvolvimento denominados "defeitos do tubo neural" e pode variar de leve a grave.',
                 'A gravidade depende de fatores como o tamanho da abertura, a localização na coluna vertebral e o tipo de espinha bífida.',
                 ['Existem três tipos de espinha bífida:', ' mielomeningocele, espinha bífida oculta e meningocele.', '1']
@@ -15,7 +15,7 @@ export const content = {
         {
             id: 2,
             title: 'Causas da mielo',
-            text: 'Algumas razões das malformações não são completamente conhecidas, mas as evidências indicam que uma nutrição precária, o ácido fólico, as causas genéticas ou ambientais ou uso de drogas podem aumentar os casos de mielo, ou seja, falha no tubo neural. Entretanto, a falta do ácido fólico é o principal fator de risco da mielo.²'
+            text: 'Algumas razões sobre as malformações não são completamente conhecidas, mas as evidências indicam que uma nutrição precária, a falta do ácido fólico, as causas genéticas ou ambientais ou uso de drogas podem aumentar os casos de mielo, ou seja, falha no tubo neural. Entretanto, a falta do ácido fólico é o principal fator de risco da mielo.²'
         },
         {
             id: 3,
@@ -23,14 +23,14 @@ export const content = {
             title: 'Quais as condições associadas à mielo?',
             text: [
                 ['Crianças e jovens adultos com mielo podem apresentar dificuldades para andar, se locomover ou ir ao banheiro, alergia ao látex, obesidade, lesões na pele, distúrbios gastrointestinais, dificuldades de aprendizagem, depressão, tendinite e problemas sexuais.', '1'],
-                'Existem algumas complicações que podem afetar pessoas com qualquer tipo de mielo: sensação ou paralisia, síndrome da medula presa, mal formação de Chiari II ou hidrocefalia, dificuldades de aprendizagem e incontinências urinária e fecal.  '
+                'Existem algumas complicações que podem afetar pessoas com qualquer tipo de mielo: perda da sensação ou paralisia, síndrome da medula presa, mal formação de Chiari II ou hidrocefalia, dificuldades de aprendizagem e incontinências urinária e fecal.  '
             ]
         },
         {
             id: 4,
             title: 'Tratamento da mielo',
             image: ['cirurgiao', 'cadeira-de-rodas'],
-            text: 'O tratamento da mielo depende da gravidade da condição. E o tratamento é de acordo com o tipo de mielo que a pessoa possui são eles:  ',
+            text: 'O tratamento da mielo depende da gravidade da condição. E o tratamento é de acordo com o tipo de mielo que a pessoa possui. Estão entre eles:  ',
             list: [
                 {
                     id: 1,
