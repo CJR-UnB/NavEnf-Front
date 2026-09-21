@@ -20,9 +20,9 @@ const NavBar = () => {
 					<Image
 						src="/assets/logo.png"
 						alt="Logo"
-						width={183}
-						height={133}
-						className="h-auto w-[90px] md:w-[120px] lg:w-[145px]"
+						width={2000}
+						height={1414}
+						className="h-auto w-[130px] md:w-[170px] lg:w-[210px]"
 					/>
 				</Link>
 
