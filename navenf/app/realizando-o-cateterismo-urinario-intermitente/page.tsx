@@ -20,6 +20,23 @@ const stepImageDimensions: Record<string, { width: number; height: number }> = {
     menino7: { width: 1200, height: 280 },
 };
 
+const stepImageExt: Record<string, string> = {
+    menina1: 'png',
+    menina2: 'svg',
+    menina3: 'svg',
+    menina4: 'png',
+    menina5: 'jpg',
+    menina6: 'jpg',
+    menina7: 'jpg',
+    menino1: 'jpg',
+    menino2: 'svg',
+    menino3: 'svg',
+    menino4: 'jpg',
+    menino5: 'svg',
+    menino6: 'svg',
+    menino7: 'svg',
+};
+
 export default function CateterismoPage() {
     return (
         <main className="w-full">
@@ -105,7 +122,7 @@ export default function CateterismoPage() {
                                 <div className="w-full flex justify-center items-center mt-[2rem]">
                                     <div className="relative w-full">
                                         <Image
-                                            src={`/assets/${item.img}.svg`}
+                                            src={`/assets/${item.img}.${stepImageExt[item.img] ?? 'svg'}`}
                                             alt={item.title}
                                             width={stepImageDimensions[item.img]?.width ?? 1000}
                                             height={stepImageDimensions[item.img]?.height ?? 1000}
@@ -169,7 +186,7 @@ export default function CateterismoPage() {
                                         }
                                     >
                                         <Image
-                                            src={`/assets/${item.img}.svg`}
+                                            src={`/assets/${item.img}.${stepImageExt[item.img] ?? 'svg'}`}
                                             alt={item.title}
                                             width={stepImageDimensions[item.img]?.width ?? 1000}
                                             height={stepImageDimensions[item.img]?.height ?? 1000}

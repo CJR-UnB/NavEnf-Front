@@ -243,7 +243,7 @@ export default function RotinaEAutonomia() {
                     {/* 1. Verde */}
                     <div className="bg-[#80D960] w-[95%] md:w-[80%] self-start py-6 px-6 md:px-16 flex items-center">
                         <div className="max-w-[700px] w-full mx-auto text-justify">
-                            <p>Oferecer treinamento de qualidade com equipe acolhedora, realizar a primeira cateterização junto com o profissional aumenta a confiança e reduz o medo inicial.</p>
+                            <p>Oferecer treinamento de qualidade com equipe acolhedora, realizar o primeiro cateterismo junto com o profissional aumenta a confiança e reduz o medo inicial.</p>
                         </div>
                     </div>
 

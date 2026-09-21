@@ -176,7 +176,7 @@ export default function EstrategiasFacilitam() {
                         <div className="bg-[#80D960] rounded-xl p-6 flex flex-col items-center text-center relative">
                             <Image src="/estrategias4.png" alt="Dormitório" width={120} height={120} className="mb-4" />
                             <span className="absolute top-6 right-6 text-xl">*</span>
-                            <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center">Morar em dormitório ou longe da família</p>
+                            <p className="font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-center">Morar ou estudar longe da família</p>
                         </div>
 
                         {/* Card Azul (Imagem 5) */}

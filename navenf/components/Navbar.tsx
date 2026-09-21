@@ -31,7 +31,7 @@ const NavBar = () => {
 						<li key={item.id}>
 							<Link
 								href={item.href}
-								className="font-['Atkinson_Hyperlegible'] text-lg font-normal text-black transition-opacity hover:opacity-70 xl:text-xl"
+								className="font-['Atkinson_Hyperlegible'] text-lg font-bold text-black transition-opacity hover:opacity-70 xl:text-xl"
 							>
 								{item.label}
 							</Link>
@@ -69,7 +69,7 @@ const NavBar = () => {
 							<Link
 								href={item.href}
 								onClick={() => setMenuIsOpen(false)}
-								className="font-['Atkinson_Hyperlegible'] text-xl text-black transition-opacity duration-200 hover:opacity-70"
+								className="font-['Atkinson_Hyperlegible'] text-xl font-bold text-black transition-opacity duration-200 hover:opacity-70"
 							>
 								{item.label}
 							</Link>

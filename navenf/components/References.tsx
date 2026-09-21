@@ -15,11 +15,11 @@ const References = ({ references }: ReferencesProps) => {
                     REFERÊNCIAS:
                 </h2>
 
-                <ol className="list-decimal space-y-5 pl-7 sm:space-y-6 sm:pl-8 md:space-y-7 lg:space-y-8">
+                <ol className="list-decimal space-y-2 pl-7 sm:pl-8">
                     {references.map((reference) => (
                         <li
                             key={reference.id}
-                            className="break-words pl-2 font-atkinson text-[20px] font-normal leading-none tracking-normal text-justify sm:pl-3"
+                            className="break-words pl-2 font-atkinson text-[13px] font-normal leading-snug tracking-normal text-justify sm:pl-3"
                         >
                             {reference.text}
                         </li>

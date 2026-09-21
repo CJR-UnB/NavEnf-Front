@@ -24,7 +24,7 @@ export default function CardIcone({ texto, imagem, link }: CardIconeProps) {
           src={imagem} 
           alt={texto} 
           fill 
-          className="object-contain mix-blend-multiply" 
+          className="object-contain"
         />
       </div>
 
