@@ -146,7 +146,7 @@ export default function DireitosPessoaComMielo() {
                         {/* Receituário (Azul) */}
                         <div className="bg-[#59ACFF] p-6 rounded-lg flex flex-col md:flex-row items-center gap-6">
                             <div className="shrink-0">
-                                <Image src="/direitos3.png" alt="Ícone de Receituário" width={60} height={70} className="w-[50px] h-auto" />
+                                <Image src="/direitos7.png" alt="Ícone de Receituário" width={60} height={70} className="w-[50px] h-auto" />
                             </div>
                             <p className="text-gray-900 text-sm sm:text-base font-atkinson text-[clamp(1.1rem,1.5vw,1.75rem)] font-normal leading-[1.35] text-justify md:text-left">
                                 <strong>Receituário:</strong> Com a prescrição dos materiais.
