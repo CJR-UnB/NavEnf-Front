@@ -314,7 +314,7 @@ export default function DireitosPessoaComMielo() {
                             <strong>Mostre o laudo:</strong> Deixe o laudo médico fácil de pegar. Se os agentes de segurança do aeroporto tiverem dúvidas sobre as sondas ou os géis, basta mostrar o papel do médico.
                         </li>
                         <li>
-                            <strong>Cuidado com a higiene:</strong> Nunca abra a embalagem estéril das sondas para mostrar aos agentes. Se eles precisarem revistar o material, explique que as sondas são estéreis e perdem a limpeza se forem abertas.
+                            <strong>Cuidado com a higiene:</strong> Nunca abra a embalagem estéril das sondas para mostrar aos agentes. Se eles precisarem revistar o material, explique que as sondas são estéreis.
                         </li>
                     </ul>
                 </div>
