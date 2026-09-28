@@ -5,7 +5,7 @@ export const sobreNosContent = {
     3: 'Autogestão',
     4: 'Dê esse passo, cuidador...'
   },
-  subtitle: 'Navegando no cuidado com a mielomeningocele',
+  subtitle: 'Navegando no cuidado da mielomeningocele',
   texts: { 
     1: 'O CUIda Mielo trata-se de uma intervenção virtual de navegação em Enfermagem na promoção do autocuidado apoiado direcionado a cuidadores de crianças e adolescentes com mielomeningocele e usuárias de cateterismo urinário intermitente.',
     2: 'Faz parte de um projeto de Doutorado do Programa de Pós Graduação em Enfermagem (PPGEnf) da Universidade de Brasília - UNB em conjunto com o grupo de pesquisa Atenção à saúde urológica nos ciclos de vida.',
