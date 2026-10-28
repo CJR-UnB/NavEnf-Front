@@ -4,6 +4,7 @@ import Script from 'next/script';
 import './globals.css';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
+import LeitorDeTexto from '../components/LeitorDeTexto';
 
 // Configurando a Atkinson Hyperlegible
 const atkinson = Atkinson_Hyperlegible({
@@ -40,6 +41,8 @@ export default function RootLayout({
                 </main>
 
                 <Footer />
+
+                <LeitorDeTexto />
 
                 {/* Plugin do governo que traduz o conteúdo do site para Libras */}
                 <Script
