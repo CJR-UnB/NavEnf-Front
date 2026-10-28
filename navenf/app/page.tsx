@@ -78,8 +78,9 @@ export default function Home() {
                         <Image 
                             src={sobreNosContent.images.logos} 
                             alt="Logos" 
-                            fill 
-                            style={{ objectFit: 'contain' }} 
+                            fill
+                            sizes="(max-width: 1172px) 100vw, 1172px"
+                            style={{ objectFit: 'contain' }}
                         />
                     </div>
 

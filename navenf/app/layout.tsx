@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Atkinson_Hyperlegible } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -39,6 +40,12 @@ export default function RootLayout({
                 </main>
 
                 <Footer />
+
+                {/* Plugin do governo que traduz o conteúdo do site para Libras */}
+                <Script
+                    src="https://vlibras.gov.br/app/vlibras-plugin.js"
+                    strategy="afterInteractive"
+                />
             </body>
         </html>
     );
